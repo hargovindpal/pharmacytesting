@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/title_logo.png" type="image/x-icon">
+    <title>Modern College of Pharmacy</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.theme.css" rel="stylesheet" type="text/css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="head container">
+            <div class="logo" id="logo-div">
+                <figure><img src="images/logo.png"></figure>
+            </div>
+
+            <div class="top-nav">
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars" id="toggle"></i>
+                </div>
+                <div class=" top-items flex-row ">
+                    <a href="mailto: ecare@mpsjhansi.org"><i class="fa-solid fa-envelope"></i>Email @
+                        ecare@mpsjhansi.org</a>
+                    <a href="tel:+91 9889094094"><i class="fa-solid fa-phone"></i>+91 9889094094</a>
+                </div>
+
+                <div class="top-items social-icon">
+                    <p>Follow Social Media : </p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@modernpublicschooljhansi8250" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class=" top-items top-right">
+                    <button class="enquiry-btn" type="submit" value="Enquiry">ENQUIRY FORM</button>
+                    <div id="form-container">
+                        <center>
+                            <h1>ENQUIRY-FORM</h1>
+                        </center>
+                        <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                        <form id="enqry-form" method="post">
+                            <div class="error-msg" style="display: none;"></div>
+                            <div class="row">
+                                <label for="name">NAME:</label>
+                                <input id="name" type="text" name="name" class="name">
+                            </div>
+                            <div class="row">
+                                <label for="email">E-MAIL:</label>
+                                <input id="email" type="email" name="email" class="email">
+                            </div>
+                            <div class="row">
+                                <label for="course">ENQUIRY FOR:</label>
+                                <select type="select" id="course" name="select" class="select" required>
+                                    <option>B.PHARMACY</option>
+                                    <option>D.PHARMACY</option>
+                                    <option>JNM</option>
+                                    <option>ANM</option>
+                                    <option>LAB TECHNICIAN</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="message">MESSAGE:</label>
+                                <textarea id="message" maxlength="300" title="Write your message here...."
+                                    required></textarea>
+                            </div>
+                            <div id="btn-section">
+                                <button class="cncl-btn" id="btn" type="reset" value="Reset">RESET</button>
+                                <button onclick="submitForm()" class="sbt-btn" id="btn" type="submit"
+                                    value="submit">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="nav-bar">
+                <ul class="flex-row">
+                    <li class="item-1"><a href="index.html">ABOUT US</a>
+                        <ul>
+                            <li><a href="about_us.html">ABOUT COLLEGE</a></li>
+                            <li><a href="vision_mission.html"> VISION & MISSION</a></li>
+                            <li><a href="founder_msg.html"> FOUNDER'S MESSAGE</a></li>
+                            <li><a href="chairman_msg.html"> CHAIRMAN'S MESSAGE</a></li>
+                            <li><a href="director_msg.html"> DIRECTOR'S MESSAGE</a></li>
+                            <li><a href="principal_msg.html"> PRINCIPAL'S MESSAGE</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-3"><a href="#">ACADEMICS</a>
+                        <ul>
+                            <li><a href="our_courses.html">OUR COURSES</a></li>
+                            <li><a href="workshops_seminars.html"> WORKSHOPS & SEMINARS</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="item-4"><a href="admission.html">ADMISSIONS</a></li>
+                    <li class="item-5"><a href="#">LIFE AT MODERN COLLEGE</a>
+                        <ul>
+                            <li><a href="facility.html"> FACILITIES</a></li>
+                            <li><a href="laboratories.html"> LABORATORIES</a></li>
+                            <li><a href="extra_curricular.html"> EXTRA CURRICULAR</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-7"><a href="#">CAREER</a>
+                        <ul>
+                            <li><a href="scope_after_b.pharm.html"> SCOPE AFTER B.PHARM</a></li>
+                            <li><a href="scope_after_d.pharm.html"> SCOPE AFTER D.PHARM</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="item-6"><a href="mandatory_disclosure.html">MANDATORY DISCLOSURE</a></li>
+                    <li class="item-7"><a href="contact.html">CONTACT US</a></li>
+
+                    <li class="item-9"><a href="https://api.whatsapp.com/send?phone=7525037054">
+                            <img src="images/whatsapp-logo.png">
+                            <p>Whatsapp Us</p></img>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="slick-slider">
+        <div class="items"><img src="images/bg.png"></img></div>
+        <div class="items"><img src="images/bg3.jpg"></img></div>
+        <div class="items"><img src="images/bg-4.jpg"></img></div>
+    </div>
+    <div class="tag-line">
+        <div></div>
+        <h2>CREATE YOUR FUTURE</h2>
+        <h3>Admission Open..!</h3>
+        <h4>for session 2024-25</h4>
+    </div>
+    </div>
+    <div class="social-media">
+        <div class="elem"> <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="elem"><a href="https://www.instagram.com/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a></div>
+        <div class="elem"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="elem"><a href="https://www.youtube.com/@modernpublicschooljhansi8250" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a></div>
+    </div>
+
+    <div class="card-wrapper">
+        <div class="column">
+            <div class="card card-color-1">
+                <h1 class="card-title">500+ </h1>
+                <h2>ADMISSIONS EVERY YEAR</h2>
+                <div class="card-img"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card card-color-2">
+                <h1 class="card-title">100+ </h1>
+                <h2>CAMPUS PLACEMENT</h2>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card card-color-1">
+                <h1 class="card-title">600+ </h1>
+                <h2>ADMISSIONS EVERY YEAR</h2>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card card-color-2">
+                <h1 class="card-title">600+ </h1>
+                <h2>ADMISSIONS EVERY YEAR</h2>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card card-color-1">
+                <h1 class="card-title">600+ </h1>
+                <h2>ADMISSIONS EVERY YEAR</h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="news-container">
+        <div class="news-title">
+            <h1>NEWS & EVENTS</h1>
+        </div>
+        <div class="slick-slider-2 ">
+            <div class="items"><img src="images/achievement.jpg"></img></div>
+            <div class="items"><img src="images/achievement.jpg"></img></div>
+            <div class="items"><img src="images/achievement.jpg"></img></div>
+            <div class="items"><img src="images/achievement.jpg"></img></div>
+        </div>
+    </div>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <img src="images/founder.jpeg" alt="">
+            <h3>(FOUNDER CHAIRMAN)</h3>
+            <p>"Education is for improving the lives of others and for leaving your community and
+                world better than you found it"</p>
+
+            <button id="more"><a href="founder_msg.html">Know More</a></button>
+        </div>
+
+        <div class="testimonial">
+            <img src="images/chairman.jpeg" alt="">
+            <h3>(CHAIRMAN)</h3>
+            <p>"People who feel good about themselves produce good results and people who produce good results
+                feel good about themselves."</p>
+
+            <button id="more"><a href="chairman_msg.html">Know More</a></button>
+
+        </div>
+        <div class="testimonial">
+            <img src="images/director.jpeg" alt="">
+            <h3>(MANAGING DIRECTOR)</h3>
+            <p>"Learning should be based on doing things and not merely knowing things.
+                Until and unless learning solutions relate to real life and motivate...."</p>
+            <button id="more"><a href="director_msg.html">Know More</a></button>
+        </div>
+
+        <div class="testimonial">
+            <img src="images/principal.jpeg" alt="">
+            <h3>(PRINCIPAL)</h3>
+            <p>"Being in Education Industry since 40 Years and committed by Dedicated Capt. Arvind Vishwanathan,
+                our vision is based on hard work....."</p>
+            <button id="more"><a href="principal_msg.html">Know More</a></button>
+        </div>
+    </div>
+
+    <div class="plc-container">
+        <div class="plc-title">
+            <h1>CAMPUS PLACEMENT</h1>
+        </div>
+        <div class="slick-slider-2 ">
+            <div class="items"><img src="images/pl-1.jpg" style="height: 300px; width:400px;"></img></div>
+            <div class="items"><img src="images/pl-2.jpg" style="height: 300px; width:400px;"></img></div>
+            <div class="items"><img src="images/pl-3.jpg" style="height: 300px; width:400px;"></img></div>
+            <div class="items"><img src="images/pl-4.jpg" style="height: 300px; width:400px;"></img></div>
+        </div>
+    </div>
+
+
+    <div class="reach-wrapper">
+
+        <div class="content">
+            <img src="images/logo.png">
+            <p>MIPS was established in 2007 as a dream of Late Shri P. Kharia as an education venture
+                to impart education in Pharmacy Management education, & commerce streams.
+                The courses launched were D.Pharm, B.Pharm, M.Pharm, BBA, MBA, B.Com & Bed.
+                A new child MIS was inducted in 2013 with a unique concept of a Childs overall
+                development- Mid Brain Activation.MIPS was established in 2007 as a dream of Late Shri
+                P. Kharia as an education venture to impart education in Pharmacy Management
+                education, & commerce streams. The courses launched were D.Pharm, B.Pharm, M.Pharm,
+                BBA, MBA, B.Com & Bed. A new child MIS was inducted in 2013 with a unique concept
+                of a Childs overall development- Mid Brain Activation.
+            </p>
+        </div>
+        <div class="content">
+            <h1>REACH US</h1>
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14408.702390040853!2d78.62610628056228!3d25.46581136985873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39777649b45b17b1%3A0x16465ccd417586a8!2sModern%20College!5e0!3m2!1sen!2sin!4v1708759571682!5m2!1sen!2sin"
+                    width="730" height="350px" style="border:2px solid green; margin-top:20px;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="ftr-container">
+            <div class="ftr-content">
+                <h2>OUR CAMPUS</h2>
+                <ul>
+                    <p> Address: 554, Kochabhawar, Kanpur Road, Jhansi, Uttar Pradesh 284128 </p>
+                    <p> Office Contact: 9889094094</p>
+                    <p> Mail ID:ecare@mpsjhansi.org</p>
+                </ul>
+            </div>
+            <div class="brk-line"></div>
+            <div class="ftr-content">
+                <h2>CONTACT US</h2>
+                <ul>
+                    <p> For Students Helpdesk: 7348550088</p>
+                    <p> Other Enquiry
+                        And Help Desk
+                        7318027770</p>
+                    <div class="elem"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="elem"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="elem"><i class="fa-brands fa-twitter"></i></div>
+                </ul>
+            </div>
+            <div class="brk-line"></div>
+            <div class="ftr-content">
+                <h2> OFFICIAL E-Mail</h2>
+                <ul>
+                    <P>ecare@mpsjhansi.org</P>
+                    <P>mpsjhansiup@gmail.com</P>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024. All Rights Reserved by, Modern College of Pharmacy, Jhansi
+                Maintained by: Franciscan Solutions Pvt. Ltd.<a title="Reach to Er. Harry for Website Creation!"
+                    href="https://api.whatsapp.com/send?phone=7525037054">(Er.harry)</a></p>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

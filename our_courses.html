@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern College of Pharmacy</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.theme.css" rel="stylesheet" type="text/css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head container">
+            <div class="logo" id="logo-div">
+                <figure><img src="images/logo.png"></figure>
+            </div>
+            <div class="top-nav">
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars" id="toggle"></i>
+                    </div>
+                <div class=" top-items flex-row ">
+                    <a href="mailto: ecare@mpsjhansi.org"><i class="fa-solid fa-envelope"></i>Email @ ecare@mpsjhansi.org</a>
+                    <a href="tel:+91 9889094094"><i class="fa-solid fa-phone"></i>+91 9889094094</a>
+                </div>
+                
+                <div class="top-items social-icon">
+                    <p>Follow Social Media : </p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@modernpublicschooljhansi8250" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class=" top-items top-right">
+                    <button class="enquiry-btn" type="submit" value="Enquiry">ENQUIRY FORM</button>
+                    <div id="form-container">
+                        <center>
+                            <h1>ENQUIRY-FORM</h1>
+                        </center>
+                        <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                        <form id="enqry-form" method="post">
+                            <div class="error-msg" style="display: none;"></div>
+                            <div class="row">
+                                <label for="name">NAME:</label>
+                                <input id="name" type="text" name="name" class="name">
+                            </div>
+                            <div class="row">
+                                <label for="email">E-MAIL:</label>
+                                <input id="email" type="email" name="email" class="email">
+                            </div>
+                            <div class="row">
+                                <label for="course">ENQUIRY FOR:</label>
+                                <select type="select" id="course" name="select" class="select" required>
+                                    <option>B.PHARMACY</option>
+                                    <option>D.PHARMACY</option>
+                                    <option>JNM</option>
+                                    <option>ANM</option>
+                                    <option>LAB TECHNICIAN</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="message">MESSAGE:</label>
+                                <textarea id="message" maxlength="300" title="Write your message here...."
+                                    required></textarea>
+                            </div>
+                            <div id="btn-section">
+                                <button class="cncl-btn" id="btn" type="reset" value="Reset">RESET</button>
+                                <button onclick="submitForm()" class="sbt-btn" id="btn" type="submit"
+                                    value="submit">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="nav-bar">
+                <ul class="flex-row">
+                    <li class="item-1"><a href="home.html">ABOUT US</a>
+                        <ul>
+                            <li><a href="about_us.html">ABOUT COLLEGE</a></li>
+                            <li><a href="vision_mission.html"> VISION & MISSION</a></li>
+                            <li><a href="founder_msg.html"> FOUNDER'S MESSAGE</a></li>
+                            <li><a href="chairman_msg.html"> CHAIRMAN'S MESSAGE</a></li>
+                            <li><a href="director_msg.html"> DIRECTOR'S MESSAGE</a></li>
+                            <li><a href="principal_msg.html"> PRINCIPAL'S MESSAGE</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-3"><a href="#">ACADEMICS</a>
+                        <ul>
+                            <li><a href="our_courses.html">OUR COURSES</a></li>
+                            <li><a href="workshops_seminars.html"> WORKSHOPS & SEMINARS</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="item-4"><a href="admission.html">ADMISSIONS</a></li>
+                    <li class="item-5"><a href="#">LIFE AT MODERN COLLEGE</a>
+                        <ul>
+                            <li><a href="facility.html"> FACILITIES</a></li>
+                            <li><a href="laboratories.html"> LABORATORIES</a></li>
+                            <li><a href="extra_curricular.html"> EXTRA CURRICULAR</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-7"><a href="#">CAREER</a>
+                    <ul>
+                        <li><a href="scope_after_b.pharm.html"> SCOPE AFTER B.PHARM</a></li>
+                        <li><a href="scope_after_d.pharm.html"> SCOPE AFTER D.PHARM</a></li>
+                    </ul>
+                    
+                    </li>
+                    <li class="item-6"><a href="mandatory_disclosure.html">MANDATORY DISCLOSURE</a></li>
+                    <li class="item-7"><a href="contact.html">CONTACT US</a></li>
+                    
+                    <li class="item-9"><a href="https://api.whatsapp.com/send?phone=7525037054">
+                            <img src="images/whatsapp-logo.png"><p>Whatsapp Us</p></img>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="course-container">
+        <div class="course-bg section0">
+            <div class="text-content">
+                <h1>Best Pharmacy College in Jhansi</h1>
+            </div>
+        </div>
+        <div class="course-content">
+            <h1> Pharma College in Jhansi &ndash; Modern College of Pharmacy </h1>
+            <p style="margin-top:0pt; margin-bottom:22.5pt; line-height:normal; border-bottom:4.5pt solid #2a3869; padding-bottom:8pt; font-size:24pt;"><span style="font-family:Arial;"></span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><span style="font-family:Arial;">Are you looking for a</span><span style="font-family:Arial;">&nbsp;</span><strong><span style="font-family:Arial;">best B.Pharma college in Jhansi</span></strong><span style="font-family:Arial;">&nbsp;</span><span style="font-family:Arial;">to study pharmacy and seek the best career for it? Don&rsquo;t worry, this exists in Seiko CP the best college for students with a love for pharmacy.</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><span style="font-family:Arial;">As the one the best college Seiko CP provides systematic career development programme empowering the profession with knowledgeable and adept pharmacists that match the rapidly changing healthcare setting All this makes us proud of state-of-the-art infrastructure, faculty with vast experience in the field, and an industry-oriented approach that allows our students to have one of the best educations and practical training.</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><span style="font-family:Arial;">&nbsp;</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><span style="font-family:Arial;">Seiko CP needs no stand-in words. We know that the choice of college significantly influences the successful completion of studies. This is the main reason we are here to create an engaging learning space where scholars prosper, innovate, and achieve their full potential, a path to professional success. We place great significance on research and practical simulators owing to the fact that they provide students with the knowledge and experience that are required to undertake any work they encounter in their careers.</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><span style="font-family:Arial;">&nbsp;</span></p>
+        <table cellspacing="0" cellpadding="0" style="width:100%; border:0.75pt solid #ffffff; border-collapse:collapse;">
+            <tbody>
+                <tr style="height:20.25pt;">
+                    <td style="width:282.65pt; border-right:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#5f9ea0;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><strong><span style="font-family:'Times New Roman'; color:#ffffff;">Course of Study level</span></strong></p>
+                    </td>
+                    <td style="border-right:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#5f9ea0;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><strong><span style="font-family:'Times New Roman'; color:#ffffff;">Seats</span></strong></p>
+                    </td>
+                    <td style="width:97.65pt; border-right:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#5f9ea0;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><strong><span style="font-family:'Times New Roman'; color:#ffffff;">Duration</span></strong></p>
+                    </td>
+                    <td style="width:144.4pt; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#5f9ea0;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><strong><span style="font-family:'Times New Roman'; color:#ffffff;">Fee</span></strong></p>
+                    </td>
+                </tr>
+                <tr style="height:7.5pt;">
+                    <td style="width:282.65pt; border-top:0.75pt solid #ffffff; border-right:0.75pt solid #ffffff; border-bottom:0.75pt solid #eeece1; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">Bachelor of Pharmacy Degree</span></p>
+                    </td>
+                    <td style="border-top:0.75pt solid #ffffff; border-right:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #eeece1; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">60</span></p>
+                    </td>
+                    <td style="width:97.65pt; border-top:0.75pt solid #ffffff; border-right:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #eeece1; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">4 Years</span></p>
+                    </td>
+                    <td style="width:144.4pt; border-top:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #eeece1; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">63300.00 (Per Year)</span></p>
+                    </td>
+                </tr>
+                <tr style="height:14.9pt;">
+                    <td style="width:282.65pt; border-top:0.75pt solid #eeece1; border-right:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">Diploma in Pharmacy Degree</span></p>
+                    </td>
+                    <td style="border-top:0.75pt solid #eeece1; border-right:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">60</span></p>
+                    </td>
+                    <td style="width:97.65pt; border-top:0.75pt solid #eeece1; border-right:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">2Year</span></p>
+                    </td>
+                    <td style="width:144.4pt; border-top:0.75pt solid #eeece1; border-left:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">&nbsp;</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><strong><span style="font-family:Arial;">&nbsp;</span></strong></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><strong><span style="font-family:Arial;">Note:</span></strong><span style="font-family:Arial;">&nbsp;</span><span style="font-family:Arial;">(Total duration of the B.Pharm cource shall be 4 years, each year comprising two semester. each semester shall normally have teaching for the 90 working days or as prescribed by AICTE from time to time.)</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><span style="font-family:Arial;">&nbsp;</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; line-height:normal; font-size:10.5pt;"><span style="font-family:Arial;">&nbsp;</span></p>
+        <table cellspacing="0" cellpadding="0" style="width:100%; border:0.75pt solid #ffffff; border-collapse:collapse;">
+            <tbody>
+                <tr>
+                    <td colspan="2" style="width:100%; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#5f9ea0;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><strong><span style="font-family:'Times New Roman'; color:#ffffff;">Eligibility</span></strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width:93%; border-top:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><strong><span style="font-family:'Times New Roman';">1. 50% marks (45% for SC/ST) in total of required subject combination as given below:</span></strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-top:0.75pt solid #ffffff; border-right:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#c7c6c6;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">Compulsory</span></p>
+                    </td>
+                    <td style="width:444.1pt; border-top:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#c7c6c6;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">Optional</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-top:0.75pt solid #ffffff; border-right:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">Physics + Chemistry</span></p>
+                    </td>
+                    <td style="width:444.1pt; border-top:0.75pt solid #ffffff; border-left:0.75pt solid #ffffff; border-bottom:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#dddddd;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">Biology + Mathematics</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width:642pt; border-top:0.75pt solid #ffffff; padding:6pt 5.62pt; vertical-align:middle; background-color:#c7c6c6;">
+                        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; font-size:12pt;"><span style="font-family:'Times New Roman';">2. Minimum 40% marks (35% for SC/ST) in each compulsory and optional subjects.</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+                    
+        </div>
+    </div>
+ 
+    <footer>
+        <div class="ftr-container">
+        <div class="ftr-content">
+            <h2>OUR CAMPUS</h2>
+            <ul><p> Address: 554, Kochabhawar, Kanpur Road, Jhansi, Uttar Pradesh 284128 </p>
+                <p> Office Contact: 7755888850</p>
+                <p> Mail ID:ecare@mpsjhansi.org</p>
+            </ul>
+        </div>
+        <div class="brk-line"></div>
+        <div class="ftr-content">
+            <h2>CONTACT US</h2>
+            <ul>
+                <p> For Students Helpdesk: 7755888850</p>
+                <p> Other Enquiry
+                    And Help Desk 
+                    7460011201</p>
+                <div class="elem" style="float:left; margin-left:120px; margin-top:10px;"><i class="fa-brands fa-facebook"></i></div>
+                <div class="elem" style="float:left; margin-top:10px;"><i class="fa-brands fa-instagram"></i></div>
+                <div class="elem" style="float:left; margin-top:10px;"><i class="fa-brands fa-twitter"></i></div>
+            </ul>
+        </div>
+        <div class="brk-line"></div>
+        <div class="ftr-content">
+            <h2> OFFICIAL E-Mail</h2>
+            <ul>
+            <P>ecare@mpsjhansi.org</P>
+            <P>mpsjhansiup@gmail.com</P>
+            </ul>
+        </div>
+    </div>
+        <div class="copyright"> 
+            <p>© 2024. All Rights Reserved by, Modern College of Pharmacy, Jhansi 
+                Maintained by: Franciscan Solutions Pvt. Ltd.<a title="Reach to Er. Harry for Website Creation!" href="https://api.whatsapp.com/send?phone=7525037054">(Er.harry)</a></p>
+        </div>
+    
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
