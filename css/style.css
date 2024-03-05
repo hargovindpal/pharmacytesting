@@ -9,7 +9,6 @@
    
     
 }
-/* hello testing */
 
 body{
 
@@ -35,7 +34,7 @@ background-color: #fec106;
 }
 .logo{
     
-    width: 320px;
+    width: 270px;
     height: 120px;
     position: absolute;
     margin-top: 65px;
@@ -45,7 +44,7 @@ background-color: #fec106;
 
 figure img{
     position: absolute;
-    width: 310px;
+    width: 270px;
     height: auto;
     padding:10px;
     background-size: cover;
@@ -456,8 +455,6 @@ ul li:hover::before, ul li:hover::after{
 }
 
 .slide-container{
-    
-
     height: 400px;
     width:100%;
     margin-top:50px;
@@ -691,74 +688,49 @@ footer .copyright a:hover{
         margin-bottom:30px !important;
     }
     .top-nav,  .nav-bar{
-    visibility: hidden;
+        visibility: hidden;
+
     }
     .logo{
-    
-        width: 210px;
-        height: 50px;
-        margin-top: 30px;
-        overflow: hidden;
+        position: relative;
+        margin-top: 50px;
     }
-    
-    
+
     figure img{
         width: 200px;
-        height: auto;
-        padding:10px;
-        background-size: cover;
-    
     }
     #toggle{
         visibility: visible !important;
         background-color: #00203FFF;
         border-radius: 0px;
-
+        margin:0px !important;
         
         }
-        .flex-row {
-          
-            display: inline;
-            background-color: red;
-        }
-        .nar-bar ul li{
-            background-color: red !important;
-        }
-
-
-    .head-container .head{
-        width: 100%;
+    .head{
+        position: relative;
+        width: 100%; 
 
         }
 
-    .head .top-nav .flex-row{
+    .head .top-nav {
         width: 100%;
         }
-        .nav-bar{
+    .nav-bar{
             display: inline;
             visibility: hidden;
-            align-items: left;
-            
+            align-items: left;    
         }
     
 
-        .head .nav-bar ul li{
-            background-color:#00203FFF ;
-            margin-left:20px;
-            align-items: center;
-            text-align: center;
-            line-height: 0;
-            border-bottom: 2px solid white;
-            transition: linear 2s ease-in-out;
+        .head .nav-bar ul{
+            flex-direction: column !important;
+            position: fixed;
         }
         .head .nav-bar ul li a{
             color:white;
-            font-size: 10px;
+            font-size: 6px;
         }
-        .head .nav-bar ul ul li a{
-            color:white !important;
-            font-size: 10px;
-        }
+        
 
         .nav-bar ul .item-9 {
             visibility: hidden;
