@@ -9,9 +9,6 @@
    
     
 }
-.flex-row {
-    display: flex;
-}
 
 body{
 
@@ -37,17 +34,17 @@ background-color: #fec106;
 }
 .logo{
     
-    width: 310px;
-    height: 96px;
+    width: 320px;
+    height: 120px;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 65px;
     overflow: hidden;
 }
 
 
 figure img{
     position: absolute;
-    width: 290px;
+    width: 310px;
     height: auto;
     padding:10px;
     background-size: cover;
@@ -74,50 +71,46 @@ figure img{
 }
 
 .head .top-nav{
-    
+    display: flex;
     margin: 5px;
     padding-top:5px;
     width: 100%;
     height: 50px;
     background-color: #00203FFF;
     color: white;
-    display: flex;
     border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
     
 }
 
-.head .top-nav .top-items {
-    display:flex;
-    height: 37px;
-    margin-top:5px;
-    
+.top-nav  a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
 }
-.head .top-nav .top-items a {
-color:white;
-margin-left:20px;
-text-decoration: none;
-font-weight: bold;
-font-size: 13px;
-    
+.top-nav  a:hover i{
+    background-color: #f69024;
 }
-.head .top-nav .top-items i {
+.top-nav i {
     
     color: white;
-    margin-left:20px;
+    
 }
-.head .top-nav .top-items a:hover i.fa-facebook{
+.top-nav a:hover i.fa-facebook{
     color:blue;
     background-color: white;
 }
-.head .top-nav .top-items a:hover i.fa-instagram{
+.head .top-nav a:hover i.fa-instagram{
     color:red;
     background-color: white;
 }
-.head .top-nav .top-items a:hover i.fa-twitter{
+.head .top-nav a:hover i.fa-twitter{
     color:green;
     background-color: white;
 }
-.head .top-nav .top-items a:hover i.fa-youtube{
+.head .top-nav a:hover i.fa-youtube{
     color:red;
     background-color: white;
 }
@@ -128,32 +121,6 @@ font-size: 13px;
    
 
 }
-.social-icon p {
-    text-align: center;
-    margin-top:10px;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-
-.sbmt-btn{
-    color: white;
-    font-weight:bolder;
-    background-color:green;
-    border-radius: 50px;
-    border:none;
-    font-size: 15px;
-    padding:8px;
-    cursor: pointer;
-    margin-left: 30px;
-    transition:all ease 0.3s;
-}
-.sbmt-btn:hover{
-
-background-color: #ed3238;
-color:white;
-transition:all ease 0.3s;
-}
 
 .enquiry-btn{
     color: #00203FFF;
@@ -162,10 +129,9 @@ transition:all ease 0.3s;
     border-radius: 10px;
     border:none;
     font-size: 15px;
-    padding:8px;
+    margin-bottom:5px;
+    padding:5px;
     cursor: pointer;
-    margin-left: 710px;
-    box-shadow: 2px 2px 1px 2px yellowgreen;
     transition:all ease 0.3s;
 }
 .enquiry-btn:hover{
@@ -174,10 +140,12 @@ transition:all ease 0.3s;
     color:white;
     transition:all ease 0.3s;
     }
+
+
 #form-container{
     display: none;
-    height: 400px;
-    width: 500px;
+    height: 450px;
+    width: 550px;
     background-color: #00203FFF;
     padding-top:40px;
     padding-left: 20px;
@@ -211,7 +179,7 @@ transition:all ease 0.3s;
 
 #form-container #enqry-form .row{
 width: 100%;
-height: 30px;
+height: 50px;
 padding:10px;
 display: inline-block;
 
@@ -265,6 +233,131 @@ display: inline-block;
     background-color:rgba(166, 255, 0, 0.966);
 }
 
+.head .nav-bar {
+    margin-left: 320px;
+    margin-top: 25px;
+    width: auto;
+    height: 50px;
+    z-index: 1;
+}
+
+.head .nav-bar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.head .nav-bar ul li {
+    list-style: none;
+    padding: 10px 6px;
+    opacity: 1;
+    text-align: left;
+    position: relative;
+}
+
+.head .nav-bar ul li a {
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #00203FFF;
+ 
+}
+
+.head .nav-bar ul li:hover {
+    cursor: pointer;
+    background-color: #00203FFF;
+}
+
+.head .nav-bar ul li:hover a {
+    color: white;
+}
+
+.head .nav-bar ul li ul {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background-color: #d8dad9fb;
+    z-index: 3;
+    min-width: 220px;
+    box-shadow: 2px 2px 5px #00203FFF;
+}
+
+.head .nav-bar ul li ul li {
+    border-bottom: 1px solid white;
+}
+
+.head .nav-bar ul li ul li a {
+    color: #00203FFF !important;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.head .nav-bar ul li ul li:hover a {
+    color: white !important;
+}
+
+.head .nav-bar ul li:hover ul {
+    display: inline;
+}
+
+.nav-bar ul .item-9{
+    background-color: #00203FFF;
+    font-weight: 800;
+    font-size: larger;
+    margin-left:20px;
+    border-radius:10px;
+    justify-content: justify;
+    transition:all ease 0.8s;
+
+}
+.nav-bar ul .item-9 img{
+    margin-top: -10px;
+    height: 30px; 
+    width: 30px;
+}
+.nav-bar ul .item-9 p{
+    margin-top:-30px;
+    margin-left:35px;
+    padding-right: 10px;
+    color: white;
+}
+
+.nav-bar ul .item-9:hover{
+    background-color: #ed3238;
+    transition:all ease 0.1s;
+    color: #00203FFF;
+
+}
+
+
+ul li::before{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: 0.5s;
+    margin:0px 0px;
+}
+
+ul li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-left:100%;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    
+}
+
+ul li:hover::before, ul li:hover::after{
+    animation: animate 1s linear infinite;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+}
 
 
 .slick-slider{
@@ -346,24 +439,6 @@ display: inline-block;
 .social-media .elem:hover i.fa-youtube{
     color:red;
 }
-.news-container{
-   
-    height: 400px;
-    width:100%;
-    margin-top:20px;
-}
-.news-container .news-title h1 {
-    
-    position: absolute;
-    text-align: center;
-    font-weight: bolder;
-    margin-left:39%;
-    margin-top: 10px;
-    color: transparent;
-    animation: effect 3s linear infinite;
-    
-
-}
 
 
 @keyframes effect {
@@ -379,41 +454,51 @@ display: inline-block;
     }
 }
 
-.plc-container{
+.slide-container{
+    
+
     height: 400px;
     width:100%;
-    margin-top:30px;
+    margin-top:50px;
+    padding:10px;
+    margin-left:50px;
+    width:93%;
+    object-fit: contain;
+    overflow:hidden;
+    box-shadow:  5px 5px 35px #00203FFF,
+             -15px -35px 35px #ffffff;
 }
-.plc-container .plc-title h1 {
-    position: absolute;
+.slide-container h1 {
     text-align: center;
     font-weight: bolder;
-    margin-left:36%;
-    margin-top: 10px;
+    padding-top: 10px;
     color: transparent;
     animation: effect 3s linear infinite;
    
 }
-.slick-slider-2{
-    box-shadow: 0px 2px 30px 5px #00203FFF;
-    position: absolute;
-     margin-top:60px;
-     margin-left:50px;
-     height: 320px;
-     width:93%;
+.slide-container .slick-slider-2{
+    margin-top:20px;
+    padding-top:10px;
+    height: 380px;
+    margin-left:0px;
+    
     }
 
- .slick-slider-2 img{
+.slide-container .slick-slider-2 img{
     padding:10px 0px 10px 5px;
     border: 20px solid inset;
     object-fit: contain;
     box-sizing: border-box;
     height: 300px; 
     width:400px;
+    margin-right: 20px;
+    aspect-ratio: 3/2;
+    background: #cccaca;
+  
   
  }
  .slick-slider-2 .slick-dots li {
-    background-color: #00203FFF;
+    display: none;
     border-radius:25px;
    
  }
@@ -680,13 +765,8 @@ footer .copyright a:hover{
         }
 
 
-        .top-right {
-            position: absolute;
-            margin-left: 63%;
-            top:50px;
-            visibility: visible !important; 
-        }
-        .top-right .enquiry-btn{
+        
+       .enquiry-btn{
             position: absolute;
             margin:0px 20px;
             font-size: 8px;
@@ -800,57 +880,11 @@ footer .copyright a:hover{
         height: 40px !important;
       
     }
-
-.news-container {
-    width: 100%;
-    height:150px;
-    margin-left:0px !important;
-    margin-top:0px !important;
-    flex-wrap: wrap;
-    display: flex;
-    }
-
-    .news-container .slick-slider-2{
-        margin-left:10px;
-        width: 93%;
-        box-shadow: none;
-        margin-top:10px;
-    }
-    .news-container .items img{
-        width: 90px !important;
-        height: 150px !important;
-        margin:0px;
-        }
-    .news-container h1{
-        font-size: 10px;
-        padding:0px;
-        
-    }
-    .plc-container{
-    margin-left:0px;
-    height: 150px;
-
-    }
+    
     .slick-dots{
         visibility: hidden;
     }
-    .plc-container .slick-slider-2{
-        margin-left:10px;
-        width: 93%;
-        box-shadow: none;
-        margin-top:10px;
-    }
-    .plc-container h1{
-        font-size: 10px;
-        padding:0px;
-
-        
-    }
-    .plc-container .items img{
-        width: 90px !important;
-        height: 150px !important;
-        margin:0px;
-        }
+    
 
 
 

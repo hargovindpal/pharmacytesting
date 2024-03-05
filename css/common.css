@@ -21,15 +21,120 @@
         margin-bottom: 100px;
     }
 
-    ul li{
-        
+    
+
+@keyframes animate {
+    0%{
+        background:linear-gradient(to left, red, #fec106) ;
+    }
+    100%{
+        background:linear-gradient(to right, red, #fec106) ;
+    }
+}
+
+
+    .head .nav-bar {
+        margin-left: 320px;
+        margin-top: 25px;
+        width: auto;
+        height: 50px;
+        z-index: 1;
+    }
+    
+    .head .nav-bar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .head .nav-bar ul li {
         list-style: none;
-        padding:12px 6px;
+        padding: 10px 6px;
         opacity: 1;
         text-align: left;
-        padding-top:12px;
-        
+        position: relative;
     }
+    
+    .head .nav-bar ul li a {
+        font-size: 12px;
+        font-weight: 800;
+        text-decoration: none;
+        color: #00203FFF;
+     
+    }
+    
+    .head .nav-bar ul li:hover {
+        cursor: pointer;
+        background-color: #00203FFF;
+    }
+    
+    .head .nav-bar ul li:hover a {
+        color: white;
+    }
+    
+    .head .nav-bar ul li ul {
+        display: none;
+        position: absolute;
+        top: 38px;
+        left: 0;
+        background-color: #d8dad9fb;
+        z-index: 3;
+        min-width: 220px;
+        box-shadow: 2px 2px 5px #00203FFF;
+    }
+    
+    .head .nav-bar ul li ul li {
+        border-bottom: 1px solid white;
+    }
+    
+    .head .nav-bar ul li ul li a {
+        color: #00203FFF !important;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    .head .nav-bar ul li ul li:hover a {
+        color: white !important;
+    }
+    
+    .head .nav-bar ul li:hover ul {
+        display: inline;
+    }
+
+    .nav-bar ul .item-9{
+        background-color: #00203FFF;
+        font-weight: 800;
+        font-size: larger;
+        margin-left:20px;
+        border-radius:10px;
+        justify-content: justify;
+        transition:all ease 0.8s;
+
+    }
+    .nav-bar ul .item-9 img{
+        margin-top: -10px;
+        height: 30px; 
+        width: 30px;
+    }
+    .nav-bar ul .item-9 p{
+        margin-top:-30px;
+        margin-left:35px;
+        padding-right: 10px;
+    }
+    .nav-bar ul .item-9:hover{
+        background-color: #ed3238;
+        transition:all ease 0.1s;
+        counter-reset: white;
+    
+    }
+    .nav-bar ul .item-9:hover a{
+        transition:all ease 0.8s;
+    }
+    .nav-bar ul .item-9 a{   
+        color:white;
+    }
+
 
     ul li::before{
         content: "";
@@ -58,101 +163,6 @@
         overflow-x: hidden;
     }
     
-
-@keyframes animate {
-    0%{
-        background:linear-gradient(to left, red, #fec106) ;
-    }
-    100%{
-        background:linear-gradient(to right, red, #fec106) ;
-    }
-}
-
-
-    .head .nav-bar{
-    margin-left: 320px;
-    margin-top: 25px;
-    width: auto;
-    height: 50px;
-    z-index: 1;
-    
-    }
-    .nav-bar ul .item-9{
-        background-color: #00203FFF;
-        font-weight: 800;
-        font-size: larger;
-        margin-left:20px;
-        border-radius:10px;
-        justify-content: justify;
-        transition:all ease 0.8s;
-
-    }
-    .nav-bar ul .item-9 img{
-        margin-top: -10px;
-        height: 30px; 
-        width: 30px;
-    }
-    .nav-bar ul .item-9 p{
-        margin-top:-30px;
-        margin-left:35px;
-        padding-right: 10px;
-    }
-    .nav-bar ul .item-9:hover{
-        background-color: #ed3238;
-        transition:all ease 0.1s;
-    
-    }
-    .nav-bar ul .item-9:hover a{
-        
-        transition:all ease 0.8s;
-        color:white;
-    }
-    .nav-bar ul .item-9 a{   
-        color:white;
-    }
-
-    ul li a { 
-        font-size: 12px;
-        font-weight: 800;
-        text-decoration: none;
-        color:#00203FFF;
-    
-        }
-
-
-    ul li:hover{
-        cursor: pointer;
-        background-color: #00203FFF;
-        
-    }
-    ul li:hover a{
-        cursor: pointer;
-    color:white;
-        
-    }
-
-    ul li ul{
-        visibility: hidden;
-        position: absolute;
-        margin-top:12px;
-        margin-left:-6px;
-        background-color:#d8dad9fb;
-        z-index: 3;
-    }
-    ul li ul li a{
-        color: #00203FFF !important;
-    }
-    ul li ul li:hover a{
-        color: white !important;
-    }
-    ul li ul li{
-        border-bottom:1px solid white;
-    }
-
-    ul li:hover ul{
-        visibility: visible;
-
-    }
 
     i {
         color: white;
@@ -503,7 +513,7 @@
     }
      .course-container .course-bg{
         position: relative;
-        background-image: url(../images/building.png);
+        background-image: url(../images/cover_photo.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -524,13 +534,13 @@
     }
     .course-container .course-bg .text-content{  
         top:35%;
-        left:10%;
        font-weight: 800;
         color:white;
+        text-align: center;
         z-index:2;
         font-size: 32px;
         position: relative;
-        filter: brightness(100%);
+        filter: brightness(150%);
     }
     .course-container .course-content{
         margin-left: 50px;
@@ -624,23 +634,32 @@
     flex-wrap: wrap;
     margin-top:50px;
     gap:20px 50px;
-
+    padding: 40px;
+    background-color: white;
 
 }
-.facility-container .facility{
-    
-    height: 350px;
+.facility-container .facility{ 
+    height: 320px;
     width: 30%;
     overflow: hidden;
     justify-content: space-between;
     background-color:#00203FFF;
     text-align: center;
-    line-height: 60px;
-    color: white;
-    
-    
+    box-shadow: -2px 5px 20px 10px rgba(128, 128, 128, 0.884);
+    border-radius: 10px;
+    border: 1px solid  whitesmoke;
    
 }
+.facility-container .facility h3{
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    margin-top:20px;
+    bottom: 0px;;
+    position: relative;
+
+}
+
 .facility-container .facility img{
     
     object-fit: contain;

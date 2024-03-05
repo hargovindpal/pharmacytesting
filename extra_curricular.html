@@ -14,112 +14,107 @@
 </head>
 <body>
     <header>
-        <div class="head container">
-            <div class="logo" id="logo-div">
-                <figure><img src="images/logo.png"></figure>
-            </div>
-            <div class="top-nav">
-                <div class="toggle-btn">
-                    <i class="fa-solid fa-bars" id="toggle"></i>
-                    </div>
-                <div class=" top-items flex-row ">
-                    <a href="mailto: ecare@mpsjhansi.org"><i class="fa-solid fa-envelope"></i>Email @ ecare@mpsjhansi.org</a>
-                    <a href="tel:+91 9889094094"><i class="fa-solid fa-phone"></i>+91 9889094094</a>
+        <header>
+            <div class="head container">
+                <div class="logo" id="logo-div">
+                    <figure><img src="images/logo.png"></figure>
                 </div>
-                
-                <div class="top-items social-icon">
-                    <p>Follow Social Media : </p>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/@modernpublicschooljhansi8250" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class=" top-items top-right">
-                    <button class="enquiry-btn" type="submit" value="Enquiry">ENQUIRY FORM</button>
-                    <div id="form-container">
-                        <center>
-                            <h1>ENQUIRY-FORM</h1>
-                        </center>
-                        <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                        <form id="enqry-form" method="post">
-                            <div class="error-msg" style="display: none;"></div>
-                            <div class="row">
-                                <label for="name">NAME:</label>
-                                <input id="name" type="text" name="name" class="name">
-                            </div>
-                            <div class="row">
-                                <label for="email">E-MAIL:</label>
-                                <input id="email" type="email" name="email" class="email">
-                            </div>
-                            <div class="row">
-                                <label for="course">ENQUIRY FOR:</label>
-                                <select type="select" id="course" name="select" class="select" required>
-                                    <option>B.PHARMACY</option>
-                                    <option>D.PHARMACY</option>
-                                    <option>JNM</option>
-                                    <option>ANM</option>
-                                    <option>LAB TECHNICIAN</option>
-                                </select>
-                            </div>
-                            <div class="row">
-                                <label for="message">MESSAGE:</label>
-                                <textarea id="message" maxlength="300" title="Write your message here...."
-                                    required></textarea>
-                            </div>
-                            <div id="btn-section">
-                                <button class="cncl-btn" id="btn" type="reset" value="Reset">RESET</button>
-                                <button onclick="submitForm()" class="sbt-btn" id="btn" type="submit"
-                                    value="submit">SUBMIT</button>
-                            </div>
-                        </form>
-                    </div>
     
+                <div class="top-nav">
+                    <div class="toggle-btn"><i class="fa-solid fa-bars" id="toggle"></i></div>
+                        <a href="mailto: ecare@mpsjhansi.org"><i class="fa-solid fa-envelope"></i>Email @
+                            ecare@mpsjhansi.org</a>
+                        <a href="tel:+91 9889094094"><i class="fa-solid fa-phone"></i>+91 9889094094</a>
+                        <a href="#"><p>Follow Social Media :</p></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@modernpublicschooljhansi8250" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <button class="enquiry-btn" type="submit" value="Enquiry">ENQUIRY FORM</button>
+                </div>
+                <div id="form-container">
+                        <h1>ENQUIRY-FORM</h1>
+                    <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                    <form id="enqry-form" method="post">
+                        <div class="error-msg" style="display: none;"></div>
+                        <div class="row">
+                            <label for="name">NAME:</label>
+                            <input id="name" type="text" name="name" class="name">
+                        </div>
+                        <div class="row">
+                            <label for="email">E-MAIL:</label>
+                            <input id="email" type="email" name="email" class="email">
+                        </div>
+                        <div class="row">
+                            <label for="course">ENQUIRY FOR:</label>
+                            <select type="select" id="course" name="select" class="select" required>
+                                <option>B.PHARMACY</option>
+                                <option>D.PHARMACY</option>
+                                <option>JNM</option>
+                                <option>ANM</option>
+                                <option>LAB TECHNICIAN</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="message">MESSAGE:</label>
+                            <textarea id="message" maxlength="300" title="Write your message here...."
+                                required></textarea>
+                        </div>
+                        <div id="btn-section">
+                            <button class="cncl-btn" id="btn" type="reset" value="Reset">RESET</button>
+                            <button onclick="submitForm()" class="sbt-btn" id="btn" type="submit"
+                                value="submit">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="nav-bar">
+                    <ul class="flex-row">
+                        <li class="item-1"><a href="home.html">ABOUT US</a>
+                            <ul>
+                                <li><a href="about_us.html">ABOUT COLLEGE</a></li>
+                                <li><a href="vision_mission.html"> VISION & MISSION</a></li>
+                                <li><a href="founder_msg.html"> FOUNDER'S MESSAGE</a></li>
+                                <li><a href="chairman_msg.html"> CHAIRMAN'S MESSAGE</a></li>
+                                <li><a href="director_msg.html"> DIRECTOR'S MESSAGE</a></li>
+                                <li><a href="principal_msg.html"> PRINCIPAL'S MESSAGE</a></li>
+                            </ul>
+                        </li>
+                        <li class="item-3"><a href="#">ACADEMICS</a>
+                            <ul>
+                                <li><a href="our_courses.html">OUR COURSES</a></li>
+                                <li><a href="workshops_seminars.html"> WORKSHOPS & SEMINARS</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="item-4"><a href="admission.html">ADMISSIONS</a></li>
+                        <li class="item-5"><a href="#">LIFE AT MODERN COLLEGE</a>
+                            <ul>
+                                <li><a href="facility.html"> FACILITIES</a></li>
+                                <li><a href="laboratories.html"> LABORATORIES</a></li>
+                                <li><a href="extra_curricular.html"> EXTRA CURRICULAR</a></li>
+                            </ul>
+                        </li>
+                        <li class="item-7"><a href="#">CAREER</a>
+                            <ul>
+                                <li><a href="scope_after_b.pharm.html"> SCOPE AFTER B.PHARM</a></li>
+                                <li><a href="scope_after_d.pharm.html"> SCOPE AFTER D.PHARM</a></li>
+                            </ul>
+    
+                        </li>
+                        <li class="item-6"><a href="mandatory_disclosure.html">MANDATORY DISCLOSURE</a></li>
+                        <li class="item-7"><a href="contact.html">CONTACT US</a></li>
+    
+                        <li class="item-9"><a href="https://api.whatsapp.com/send?phone=7525037054">
+                                <img src="images/whatsapp-logo.png">
+                                <p>Whatsapp Us</p></img>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="nav-bar">
-                <ul class="flex-row">
-                    <li class="item-1"><a href="home.html">ABOUT US</a>
-                        <ul>
-                            <li><a href="about_us.html">ABOUT COLLEGE</a></li>
-                            <li><a href="vision_mission.html"> VISION & MISSION</a></li>
-                            <li><a href="founder_msg.html"> FOUNDER'S MESSAGE</a></li>
-                            <li><a href="chairman_msg.html"> CHAIRMAN'S MESSAGE</a></li>
-                            <li><a href="director_msg.html"> DIRECTOR'S MESSAGE</a></li>
-                            <li><a href="principal_msg.html"> PRINCIPAL'S MESSAGE</a></li>
-                        </ul>
-                    </li>
-                    <li class="item-3"><a href="#">ACADEMICS</a>
-                        <ul>
-                            <li><a href="our_courses.html">OUR COURSES</a></li>
-                            <li><a href="workshops_seminars.html"> WORKSHOPS & SEMINARS</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li class="item-4"><a href="admission.html">ADMISSIONS</a></li>
-                    <li class="item-5"><a href="#">LIFE AT MODERN COLLEGE</a>
-                        <ul>
-                            <li><a href="facility.html"> FACILITIES</a></li>
-                            <li><a href="laboratories.html"> LABORATORIES</a></li>
-                            <li><a href="extra_curricular.html"> EXTRA CURRICULAR</a></li>
-                        </ul>
-                    </li>
-                    <li class="item-7"><a href="#">CAREER</a>
-                    <ul>
-                        <li><a href="scope_after_b.pharm.html"> SCOPE AFTER B.PHARM</a></li>
-                        <li><a href="scope_after_d.pharm.html"> SCOPE AFTER D.PHARM</a></li>
-                    </ul>
-                    
-                    </li>
-                    <li class="item-6"><a href="mandatory_disclosure.html">MANDATORY DISCLOSURE</a></li>
-                    <li class="item-7"><a href="contact.html">CONTACT US</a></li>
-                    
-                    <li class="item-9"><a href="https://api.whatsapp.com/send?phone=7525037054">
-                            <img src="images/whatsapp-logo.png"><p>Whatsapp Us</p></img>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </header>
     </header>
 activity page
         

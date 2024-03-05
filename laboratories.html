@@ -18,64 +18,56 @@
             <div class="logo" id="logo-div">
                 <figure><img src="images/logo.png"></figure>
             </div>
+
             <div class="top-nav">
-                <div class="toggle-btn">
-                    <i class="fa-solid fa-bars" id="toggle"></i>
-                    </div>
-                <div class=" top-items flex-row ">
-                    <a href="mailto: ecare@mpsjhansi.org"><i class="fa-solid fa-envelope"></i>Email @ ecare@mpsjhansi.org</a>
+                <div class="toggle-btn"><i class="fa-solid fa-bars" id="toggle"></i></div>
+                    <a href="mailto: ecare@mpsjhansi.org"><i class="fa-solid fa-envelope"></i>Email @
+                        ecare@mpsjhansi.org</a>
                     <a href="tel:+91 9889094094"><i class="fa-solid fa-phone"></i>+91 9889094094</a>
-                </div>
-                
-                <div class="top-items social-icon">
-                    <p>Follow Social Media : </p>
+                    <a href="#"><p>Follow Social Media :</p></a>
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/@modernpublicschooljhansi8250" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class=" top-items top-right">
+                    <a href="https://www.youtube.com/@modernpublicschooljhansi8250" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
                     <button class="enquiry-btn" type="submit" value="Enquiry">ENQUIRY FORM</button>
-                    <div id="form-container">
-                        <center>
-                            <h1>ENQUIRY-FORM</h1>
-                        </center>
-                        <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                        <form id="enqry-form" method="post">
-                            <div class="error-msg" style="display: none;"></div>
-                            <div class="row">
-                                <label for="name">NAME:</label>
-                                <input id="name" type="text" name="name" class="name">
-                            </div>
-                            <div class="row">
-                                <label for="email">E-MAIL:</label>
-                                <input id="email" type="email" name="email" class="email">
-                            </div>
-                            <div class="row">
-                                <label for="course">ENQUIRY FOR:</label>
-                                <select type="select" id="course" name="select" class="select" required>
-                                    <option>B.PHARMACY</option>
-                                    <option>D.PHARMACY</option>
-                                    <option>JNM</option>
-                                    <option>ANM</option>
-                                    <option>LAB TECHNICIAN</option>
-                                </select>
-                            </div>
-                            <div class="row">
-                                <label for="message">MESSAGE:</label>
-                                <textarea id="message" maxlength="300" title="Write your message here...."
-                                    required></textarea>
-                            </div>
-                            <div id="btn-section">
-                                <button class="cncl-btn" id="btn" type="reset" value="Reset">RESET</button>
-                                <button onclick="submitForm()" class="sbt-btn" id="btn" type="submit"
-                                    value="submit">SUBMIT</button>
-                            </div>
-                        </form>
-                    </div>
-    
-                </div>
             </div>
+            <div id="form-container">
+                    <h1>ENQUIRY-FORM</h1>
+                <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+                <form id="enqry-form" method="post">
+                    <div class="error-msg" style="display: none;"></div>
+                    <div class="row">
+                        <label for="name">NAME:</label>
+                        <input id="name" type="text" name="name" class="name">
+                    </div>
+                    <div class="row">
+                        <label for="email">E-MAIL:</label>
+                        <input id="email" type="email" name="email" class="email">
+                    </div>
+                    <div class="row">
+                        <label for="course">ENQUIRY FOR:</label>
+                        <select type="select" id="course" name="select" class="select" required>
+                            <option>B.PHARMACY</option>
+                            <option>D.PHARMACY</option>
+                            <option>JNM</option>
+                            <option>ANM</option>
+                            <option>LAB TECHNICIAN</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="message">MESSAGE:</label>
+                        <textarea id="message" maxlength="300" title="Write your message here...."
+                            required></textarea>
+                    </div>
+                    <div id="btn-section">
+                        <button class="cncl-btn" id="btn" type="reset" value="Reset">RESET</button>
+                        <button onclick="submitForm()" class="sbt-btn" id="btn" type="submit"
+                            value="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+
             <div class="nav-bar">
                 <ul class="flex-row">
                     <li class="item-1"><a href="home.html">ABOUT US</a>
@@ -92,7 +84,7 @@
                         <ul>
                             <li><a href="our_courses.html">OUR COURSES</a></li>
                             <li><a href="workshops_seminars.html"> WORKSHOPS & SEMINARS</a></li>
-                            
+
                         </ul>
                     </li>
                     <li class="item-4"><a href="admission.html">ADMISSIONS</a></li>
@@ -104,24 +96,79 @@
                         </ul>
                     </li>
                     <li class="item-7"><a href="#">CAREER</a>
-                    <ul>
-                        <li><a href="scope_after_b.pharm.html"> SCOPE AFTER B.PHARM</a></li>
-                        <li><a href="scope_after_d.pharm.html"> SCOPE AFTER D.PHARM</a></li>
-                    </ul>
-                    
+                        <ul>
+                            <li><a href="scope_after_b.pharm.html"> SCOPE AFTER B.PHARM</a></li>
+                            <li><a href="scope_after_d.pharm.html"> SCOPE AFTER D.PHARM</a></li>
+                        </ul>
+
                     </li>
                     <li class="item-6"><a href="mandatory_disclosure.html">MANDATORY DISCLOSURE</a></li>
                     <li class="item-7"><a href="contact.html">CONTACT US</a></li>
-                    
+
                     <li class="item-9"><a href="https://api.whatsapp.com/send?phone=7525037054">
-                            <img src="images/whatsapp-logo.png"><p>Whatsapp Us</p></img>
+                            <img src="images/whatsapp-logo.png">
+                            <p>Whatsapp Us</p></img>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    FEE RULES Page!
+   
+    <div class="course-container">
+        <div class="course-bg section0">
+            <div class="text-content">
+                <h1>Best Practical  Laboratories</h1>
+            </div>
+        </div>
+        <div class="course-content">
+            <h1> COLLEGE LABORATORIES </h1>
+            <div class="show-big-container">
+                <img class="big-image" src="">
+
+            </div>
+            <div class="facility-container">
+                <div class="facility">
+                    <img class="image" src="images/laboratories/biotech_lab.jpg" alt="">
+                    <h3>BIOCHEMISTRY & BIOTECHNOLOGY LAB</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/central_instrument_lab.jpg" alt="">
+                    <h3>CENTRAL  INSTRUMENTATION  LAB</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/human_atonomy_lab.jpg" alt="">
+                    <h3>HUMAN ANATOMY &  PHYSIOLOGY LAB</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/machine_room.jpg" alt="">
+                    <h3>MACHINE ROOM</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/pharmaceutial_lab.JPG" alt="">
+                    <h3>PHARMACEUTIAL CHEMISTRY LAB</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/pharmaceutics_lab.JPG" alt="">
+                    <h3>PHARMACEUTICS LAB</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/pharmacognosy_lab.JPG" alt="">
+                    <h3>PHARMACOGNOSY LAB</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/pharmacology_lab.JPG" alt="">
+                    <h3>PHARMACOLOGY LAB</h3>
+                </div>
+                <div class="facility">
+                    <img class="image" src="images/laboratories/pharmacy_pract_lab.jpg" alt="">
+                    <h3>PHARMACY PRACTICE LAB</h3>
+                </div>
+
+            </div>     
+        </div>
+    </div>
+
     <footer>
         <div class="ftr-container">
         <div class="ftr-content">
