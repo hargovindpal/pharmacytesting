@@ -9,6 +9,7 @@
    
     
 }
+/* hello testing */
 
 body{
 
@@ -485,7 +486,7 @@ ul li:hover::before, ul li:hover::after{
     }
 
 .slide-container .slick-slider-2 img{
-    padding:10px 0px 10px 5px;
+    padding:10px 0px 10px 5px;  
     border: 20px solid inset;
     object-fit: contain;
     box-sizing: border-box;
