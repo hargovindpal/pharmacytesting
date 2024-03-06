@@ -9,7 +9,6 @@
     enqry.addEventListener('click', function(e){
         e.stopPropagation();
         showform.style.display = 'inline';
-
     })
     cancel.addEventListener('click', function(e){
         e.stopPropagation();
