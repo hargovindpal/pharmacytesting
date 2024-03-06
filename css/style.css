@@ -880,6 +880,37 @@ footer .copyright a:hover{
         text-wrap: wrap;
         gap: 20px;
     }
+
+    /* text-containers responsive */
+    .text-container-2{
+        display: inline !important;
+        margin:0;
+    }
+    .text-container{
+        margin-top:50px;
+        display: inline !important;
+        margin:0;
+        box-shadow: none !important;
+    }
+    .text-container .content p{
+        padding:10px 20px !important;
+    }
+    .text-container .content img{
+
+        margin-left:7px !important;
+    }
     
+    /* mandatory-closure responsive */
+    .mand-disc{
+        margin:0;
+
+    }
+    .mand-disc h1{
+       font-size: 15px;
+    }
+    .mand-disc iframe{
+        margin:10px !important;
+    }
+
 
 }
