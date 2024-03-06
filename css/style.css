@@ -22,31 +22,31 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 5px;
 }
 ::-webkit-scrollbar-track{
-background-color: #fec106;
+background-color: #19e9c6;
 
 }
 ::-webkit-scrollbar-thumb{
-    background:linear-gradient(to bottom, wheat, #00203FFF);
+    background:linear-gradient(to bottom, #00203FFF, red);
     border-radius: 5px;
 }
 .logo{
     
-    width: 270px;
+    width: 310px;
     height: 120px;
     position: absolute;
-    margin-top: 65px;
+    margin-top: 70px;
     overflow: hidden;
 }
 
 
 figure img{
     position: absolute;
-    width: 270px;
+    width:300px;
     height: auto;
-    padding:10px;
+    padding:5px;
     background-size: cover;
 
 }
@@ -144,17 +144,16 @@ figure img{
 
 #form-container{
     display: none;
-    height: 450px;
-    width: 550px;
+    position: fixed;
     background-color: #00203FFF;
-    padding-top:40px;
-    padding-left: 20px;
+    width: 550px;
+    padding:30px;
+    top:0;
+    left:0;
+    transform: translate(70%, 40%);
     border-radius: 10px;
     color:white;
-    position: fixed;
-    margin-left:-10%;
-    margin-top:10%;
-    z-index: 1;
+    z-index: 5;
 
 }
 .cancel {
@@ -174,8 +173,8 @@ figure img{
 }
 #form-container #enqry-form{
     margin-top: 30px;
+    
 }
-
 
 #form-container #enqry-form .row{
 width: 100%;
@@ -234,8 +233,11 @@ display: inline-block;
 }
 
 .head .nav-bar {
-    margin-left: 320px;
-    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 20px;
     width: auto;
     height: 50px;
     z-index: 1;
@@ -243,16 +245,18 @@ display: inline-block;
 
 .head .nav-bar ul {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
 
 .head .nav-bar ul li {
     list-style: none;
-    padding: 10px 6px;
+    padding: 10px 8px;
     opacity: 1;
     text-align: left;
     position: relative;
+    transition:all 0.3s ease;
 }
 
 .head .nav-bar ul li a {
@@ -285,12 +289,13 @@ display: inline-block;
 
 .head .nav-bar ul li ul li {
     border-bottom: 1px solid white;
+    transition:all 0.5s ease;
 }
 
 .head .nav-bar ul li ul li a {
     color: #00203FFF !important;
     display: block;
-    padding: 10px;
+    padding: 0px;
     text-decoration: none;
 }
 
@@ -300,100 +305,100 @@ display: inline-block;
 
 .head .nav-bar ul li:hover ul {
     display: inline;
+    
 }
-
-.nav-bar ul .item-9{
-    background-color: #00203FFF;
-    font-weight: 800;
-    font-size: larger;
-    margin-left:20px;
-    border-radius:10px;
-    justify-content: justify;
-    transition:all ease 0.8s;
-
+.whatsapp{
+    position: absolute;
+    right:70px;
+    margin-top:20px;
+    height: 50px;
+    width: 50px;
 }
-.nav-bar ul .item-9 img{
-    margin-top: -10px;
-    height: 30px; 
-    width: 30px;
-}
-.nav-bar ul .item-9 p{
-    margin-top:-30px;
-    margin-left:35px;
-    padding-right: 10px;
-    color: white;
-}
-
-.nav-bar ul .item-9:hover{
-    background-color: #ed3238;
-    transition:all ease 0.1s;
-    color: #00203FFF;
-
-}
-
-
-ul li::before{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    transition: 0.5s;
-    margin:0px 0px;
-}
-
-ul li::after {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    margin-left:100%;
-    transition: 0.5s;
-    transform: translateX(-100%);
+.whatsapp img{
+    height: 50px;
+    width: 50px;
     
 }
 
-ul li:hover::before, ul li:hover::after{
-    animation: animate 1s linear infinite;
-    width: 100%;
-    display: block;
-    overflow-x: hidden;
-}
 
 
-.slick-slider{
+
+.slick-container{
    
     position: relative;
-    margin-top:0px;
     margin-left:50px;
     height: 500px;
+    width: 93%;
+    overflow: hidden;
     z-index: -1;  
 }
-.slick-slider img{
-    object-fit: cover;
-    height: 500px; 
-    width:1250px;
-   
-}
-
-
-.tag-line{
-    display: flex;
-    flex-direction: column;
-    width: 92%;
-    height: 500px;
-    row-gap: 10px;
-    font-size: 20px;
+.slick-container::after{
+    content: '';
     position: absolute;
-    color: white;
-    font-weight: bolder;
-    align-items: center;
-    justify-content: center;
-    margin-top:-500px;
-    margin-left:50px;
-    background-color: rgba(21, 25, 61, 0.685);
-    z-index: -1;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    transition:translate(-50%, 50%);
+    background:rgba(14, 14, 36, 0.651);
 
 }
+.slick-content{
+    position: relative;
+    margin-top:-75px;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.slick-content img{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.card-wrapper{
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: space-around;
+    width:80%;
+    margin-top: -145px;
+    margin-left: 10%;
+
+}
+.card-wrapper .column {
+    position: relative;
+    width: 22%;
+   
+    
+}
+.card-wrapper .column .card{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding:2vw;
+    font-size: 1.8vh;
+    cursor: pointer;
+}
+.card-color-1{
+    color: white;
+    background:linear-gradient(to  right,#00203FFF, #fec006c7 );
+}
+.card-color-2{
+    color: white;
+    background-color:#fec106;
+}
+.card:hover{
+    background:linear-gradient(to  right, #fec106, #ADEFD1FF);
+}
+
+
+
+
 
 .social-media{
     display: inline;
@@ -796,63 +801,13 @@ footer .copyright a:hover{
         }
             
 
-    .slick-slider{
-        width: 100%;
-        margin-left:30px;
-        margin-top:20px;
-
-
-    }
-    .slick-slider img{
-        width: 100%;
-        height: 40vh;
-
-    }
-    .tag-line {
-        width: 100%;
-        height: 40vh;
-        margin-left:30px;
-        font-size: 14px;
-        position: relative;
-    }
+    
+    
     .social-media{
         visibility: hidden;
     }
-    .card-wrapper{
-        
-        display: flex;
-        width:100% !important;
-        height: 40px !important;
-        margin-top:-40px !important;
-        margin-left:25px !important;
-        justify-content: space-around !important;
-       
-      
-    }
+
     
-    .column {
-        display: flex;
-        align-items:center;
-        width: 40px !important;
-        height: 40px !important;
- 
-      }
-    .card{
-        position: relative !important;
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 0px;
-        color: white;
-        font-size: 3px;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 0px !important;
-        margin-left:0px !important;
-        padding:0px !important;
-        width: 40px !important;
-        height: 40px !important;
-      
-    }
     
     .slick-dots{
         visibility: hidden;

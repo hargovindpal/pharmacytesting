@@ -33,135 +33,7 @@
 }
 
 
-    .head .nav-bar {
-        margin-left: 270px;
-        margin-top: 25px;
-        width: auto;
-        height: 50px;
-        z-index: 1;
-    }
-    
-    .head .nav-bar ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .head .nav-bar ul li {
-        list-style: none;
-        padding: 10px 6px;
-        opacity: 1;
-        text-align: left;
-        position: relative;
-    }
-    
-    .head .nav-bar ul li a {
-        font-size: 12px;
-        font-weight: 800;
-        text-decoration: none;
-        color: #00203FFF;
-     
-    }
-    
-    .head .nav-bar ul li:hover {
-        cursor: pointer;
-        background-color: #00203FFF;
-    }
-    
-    .head .nav-bar ul li:hover a {
-        color: white;
-    }
-    
-    .head .nav-bar ul li ul {
-        display: none;
-        position: absolute;
-        top: 38px;
-        left: 0;
-        background-color: #d8dad9fb;
-        z-index: 3;
-        min-width: 220px;
-        box-shadow: 2px 2px 5px #00203FFF;
-    }
-    
-    .head .nav-bar ul li ul li {
-        border-bottom: 1px solid white;
-    }
-    
-    .head .nav-bar ul li ul li a {
-        color: #00203FFF !important;
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-    }
-    
-    .head .nav-bar ul li ul li:hover a {
-        color: white !important;
-    }
-    
-    .head .nav-bar ul li:hover ul {
-        display: inline;
-    }
-
-    .nav-bar ul .item-9{
-        background-color: #00203FFF;
-        font-weight: 800;
-        font-size: larger;
-        margin-left:20px;
-        border-radius:10px;
-        justify-content: justify;
-        transition:all ease 0.8s;
-
-    }
-    .nav-bar ul .item-9 img{
-        margin-top: -10px;
-        height: 30px; 
-        width: 30px;
-    }
-    .nav-bar ul .item-9 p{
-        margin-top:-30px;
-        margin-left:35px;
-        padding-right: 10px;
-    }
-    .nav-bar ul .item-9:hover{
-        background-color: #ed3238;
-        transition:all ease 0.1s;
-        counter-reset: white;
-    
-    }
-    .nav-bar ul .item-9:hover a{
-        transition:all ease 0.8s;
-    }
-    .nav-bar ul .item-9 a{   
-        color:white;
-    }
-
-
-    ul li::before{
-        content: "";
-        display: block;
-        width: 0%;
-        height: 2px;
-        transition: 0.5s;
-        margin:0px 0px;
-    }
-
-    ul li::after {
-        content: "";
-        display: block;
-        width: 0%;
-        height: 2px;
-        margin-left:100%;
-        transition: 0.5s;
-        transform: translateX(-100%);
-        
-    }
-    
-    ul li:hover::before, ul li:hover::after{
-        animation: animate 1s linear infinite;
-        width: 100%;
-        display: block;
-        overflow-x: hidden;
-    }
+   
     
 
     i {
@@ -191,49 +63,7 @@
         cursor: pointer;
         color:white
     }
-    .card-wrapper{
-        position: absolute;
-        display: flex;
-        width:1200px;
-        height: 150px;
-        margin-top: -160px;
-        margin-left: 50px;
     
-    }
-    .card-wrapper:after{
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .column {
-
-        width: 25%;
-    
-
-    }
-    .card{
-        color: white;
-        box-sizing: border-box;
-        text-align: center;
-        margin-top: 10px;
-        margin-left:30px;
-        padding:20px;
-        width: 98%;
-        height:150px;
-        text-align: center;
-        cursor: pointer;
-    }
-    .card-color-1{
-        color: white;
-        background:linear-gradient(to  right,#00203FFF, #fec006c7 );
-    }
-    .card-color-2{
-        color: white;
-        background-color:#fec106;
-    }
-    .card:hover{
-        background:linear-gradient(to  right, #fec106, #ADEFD1FF);
-    }
 
     .text-container {
         margin-top:50px;
@@ -532,9 +362,9 @@
         position:absolute;
         opacity: 0.6;
     }
-    .course-container .course-bg .text-content{  
+     .text-content{  
         top:35%;
-       font-weight: 800;
+        font-weight: 800;
         color:white;
         text-align: center;
         z-index:2;
