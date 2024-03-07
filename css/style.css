@@ -704,15 +704,15 @@ footer .copyright a:hover{
         margin-top: 60px;
         padding: 0 !important;
         height: auto;
-        width: 100%;
+        width: 70% !important;
         overflow-x: hidden !important;
 
     }
     figure img{
 
-        width: 200px;
+        width: 230px;
         margin:0 !important;
-        padding-left: 5px !important;
+        padding-left: 0px !important;
     }
 
     .toggle-btn{  
