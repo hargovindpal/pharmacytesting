@@ -706,9 +706,9 @@ footer .copyright a:hover{
         margin-left:-20px !important;
         padding: 0 !important;
         height: auto;
-        width: 68%;
-        background-color:#d8dad9f6;
+        width: 100%;
         z-index: 5;
+        overflow-x: hidden !important;
 
     }
     figure img{
@@ -719,8 +719,7 @@ footer .copyright a:hover{
 
     .toggle-btn{  
         visibility:visible;
-        position: fixed !important;
-        width: 70% !important;
+        width: 100% !important;
         overflow-x:hidden;
         
     }
