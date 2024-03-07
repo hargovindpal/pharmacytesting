@@ -32,15 +32,15 @@ background-color: #19e9c6;
 }
 .logo{
     position: absolute;
-    width: 310px;
+    width: 350px;
     height: 120px;
-    margin-top: 70px;
+    margin-top: 65px;
     overflow: hidden;
 }
 
 figure img{
     
-    width:300px;
+    width:350px;
     height: auto;
     padding:5px;
     background-size: cover;
@@ -229,7 +229,7 @@ display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 300px;
+    margin-left: 350px;
     margin-top: 20px;
     width: auto;
     height: 50px;
@@ -246,7 +246,7 @@ display: inline-block;
 
 .head .nav-bar ul li {
     list-style: none;
-    padding: 10px 8px;
+    padding: 10px 5px;
     opacity: 1;
     text-align: left;
     position: relative;
@@ -304,11 +304,12 @@ display: inline-block;
     
 }
 .whatsapp{
-    position: absolute;
-    right:70px;
-    margin-top:20px;
+    position: fixed;
+    right:30px;
+    margin-top:62px;
     height: 50px;
     width: 50px;
+    z-index: 5;
 }
 .whatsapp img{
     height: 50px;
@@ -614,7 +615,6 @@ display: inline-block;
     position: relative;
     margin-left:50px;
     margin-top:10px;
-    height: 200px;
     width:94%;
     background-color:#00203FFF;
     border:3px solid white;
@@ -626,12 +626,12 @@ display: inline-block;
 }
 footer .ftr-container .ftr-content{
     width:35%;
-    height:170px;
+    
     margin:20px;
     
 }
 footer .ftr-container .brk-line{
-    height:180px;
+    height:200px;
     width:5px;
     background-color: whitesmoke;
     content: "";
@@ -701,18 +701,28 @@ footer .copyright a:hover{
     }
 
     .logo{
-        position: absolute !important;
-        margin-top: 60px;
+        position: fixed !important;
+        margin-top: 55px;
+        margin-left:-20px !important;
+        padding: 0 !important;
         height: auto;
+        width: 68%;
+        background-color:#d8dad9f6;
+        z-index: 5;
+
     }
     figure img{
         width: 200px;
+        margin:0 !important;
+        padding: 0 !important;
     }
 
     .toggle-btn{  
         visibility:visible;
-        width: 100%;
+        position: fixed !important;
+        width: 70% !important;
         overflow-x:hidden;
+        
     }
 
     .head .nav-bar{
@@ -732,10 +742,10 @@ footer .copyright a:hover{
         }
 
         .whatsapp{
-            position: absolute;
+            position:fixed;
             top:0;
-            right: 0;
-            transform:translate(-15%, 100%);
+            right:140px !important;
+            transform:translate(-20%, 7%);
         }
         
     .social-media{
@@ -843,6 +853,7 @@ footer .copyright a:hover{
     }
     .content .google-map iframe{
         width:100% !important ;
+
       
     }
     .ftr-container{
@@ -859,6 +870,9 @@ footer .copyright a:hover{
         padding: 5px;
         row-gap:10px ;
        
+    }
+    .ftr-container .ftr-content ul p{
+        font-size: 12px;
     }
     .ftr-container .ftr-content h2{
         font-size: 15px;
@@ -880,6 +894,7 @@ footer .copyright a:hover{
         height: auto;
         flex-wrap: wrap;
         width: 100%;
+        font-size: 12px;
     }
     .txt-container{
         width: 100%;
