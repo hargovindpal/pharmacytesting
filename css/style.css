@@ -650,8 +650,7 @@ footer .ftr-container .ftr-content p{
   
 }
 .ftr-content .elem i{
-    font-size: 30px;
-   
+    font-size: 30px; 
 }
 .ftr-content .elem i:hover{
     cursor:pointer;
@@ -864,6 +863,11 @@ footer .copyright a:hover{
     .ftr-container .ftr-content h2{
         font-size: 15px;
     }
+    .ftr-content .elem {
+        display: flex !;
+        justify-content: center;
+      
+    }
 
     .ftr-container .brk-line {
         width: 100% !important;
@@ -927,10 +931,18 @@ footer .copyright a:hover{
         margin:10px !important;
         height: 360px !important;
     }
+    .course-container{
+        width: 100% !important;
+        margin-left:0px;
+    }
+    .course-container .course-bg{
+        margin: 0px 10px !important;  
+
+    }
     .course-container .course-content{
         display: inline !important;
         width: 100% !important;
-        margin:20px !important;
+        margin-left:20px !important;
         padding:0;
         
     }
@@ -963,10 +975,7 @@ footer .copyright a:hover{
         display: none !important;
        
     }
-    .course-container .course-bg{
-        margin: 0px 10px !important;  
-
-    }
+    
    
 
 
