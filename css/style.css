@@ -379,14 +379,14 @@ display: inline-block;
 }
 .card-color-1{
     color: white;
-    background:linear-gradient(to  right,#00203FFF, #fec006c7 );
+    background:linear-gradient(to  right,#00203FFF, #f69024);
 }
 .card-color-2{
     color: white;
-    background-color:#fec106;
+    background-color:#f69024;
 }
 .card:hover{
-    background:linear-gradient(to  right, #fec106, #ADEFD1FF);
+    background:linear-gradient(to  right, #f69024, #00203FFF);
 }
 
 
@@ -622,7 +622,7 @@ display: inline-block;
     color:white;
     text-align: center;
     justify-content: center;
-    z-index: -1;
+    
 }
 footer .ftr-container .ftr-content{
     width:35%;
@@ -643,6 +643,19 @@ footer .ftr-container .ftr-content p{
     word-wrap: break-word;
     font-family: Arial, Helvetica, sans-serif;
     margin:15px;
+}
+.ftr-content .elem {
+    display: flex;
+    justify-content: center;
+  
+}
+.ftr-content .elem i{
+    font-size: 30px;
+   
+}
+.ftr-content .elem i:hover{
+    cursor:pointer;
+   
 }
 .ftr-container .ftr-content :hover p{
     cursor: pointer;
@@ -851,11 +864,7 @@ footer .copyright a:hover{
     .ftr-container .ftr-content h2{
         font-size: 15px;
     }
-    .ftr-container .ftr-content .elem{
-        align-items: center !important;
-        justify-content: space-around !important;
-        display: flex !important;
-    }
+
     .ftr-container .brk-line {
         width: 100% !important;
         height:2px !important;
@@ -873,6 +882,7 @@ footer .copyright a:hover{
         margin-top:30px !important;
         margin-left:20px !important;
         padding:0px !important;
+        box-shadow: none !important;
 
     }
     .txt-container h3,  .p{
@@ -885,12 +895,17 @@ footer .copyright a:hover{
     .text-container-2{
         display: inline !important;
         margin:0;
+        box-shadow:none !important;
     }
     .text-container{
         margin-top:50px;
         display: inline !important;
         margin:0;
         box-shadow: none !important;
+    }
+    .text-container h2{
+        font-size: 20px;
+
     }
     .text-container .content p{
         padding:10px 20px !important;
@@ -910,7 +925,50 @@ footer .copyright a:hover{
     }
     .mand-disc iframe{
         margin:10px !important;
+        height: 360px !important;
     }
+    .course-container .course-content{
+        display: inline !important;
+        width: 100% !important;
+        margin:20px !important;
+        padding:0;
+        
+    }
+    .course-container .course-content h1{
+        font-size: 20px;
+    }
+        .facility-container{
+        display: inline !important;
+        width: 100%;
+        margin-top:20px !important;
+        gap:0;
+        padding:0px !important;
+        box-shadow: none !important;
+       
+    
+    }
+    .facility-container .facility{
+        width: 95% !important;
+        overflow: hidden;
+        margin:20px 5px !important;
+        box-shadow: none !important;
+    
+    }
+    .facility-container .facility h3{
+        font-size: 12px !important;
+     
+    }
+
+    .show-big-container {
+        display: none !important;
+       
+    }
+    .course-container .course-bg{
+        margin: 0px 10px !important;  
+
+    }
+   
+
 
 
 }
