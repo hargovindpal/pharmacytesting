@@ -701,7 +701,7 @@ footer .copyright a:hover{
     }
 
     .logo{
-        margin-top: 60px;
+        margin-top: 65px;
         padding: 0 !important;
         height: auto;
         width: 100%;
@@ -738,10 +738,10 @@ footer .copyright a:hover{
         }
 
         .whatsapp{
-            position:absolute;
-            top:0;
-            right:5px !important;
-            transform:translate(-20%, 7%);
+            position: absolute;
+            right:10px;
+            top:10px;
+            
         }
         
     .social-media{
