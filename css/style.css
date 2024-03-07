@@ -953,7 +953,6 @@ footer .copyright a:hover{
         display: inline !important;
         width: 100%;
         margin-top:20px !important;
-        gap:0;
         padding:0px !important;
         box-shadow: none !important;
        
@@ -962,7 +961,7 @@ footer .copyright a:hover{
     .facility-container .facility{
         width: 95% !important;
         overflow: hidden;
-        margin:20px 5px !important;
+        margin:20px 10px !important;
         box-shadow: none !important;
     
     }
