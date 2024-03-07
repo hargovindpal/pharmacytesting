@@ -701,13 +701,10 @@ footer .copyright a:hover{
     }
 
     .logo{
-        position: fixed !important;
-        margin-top: 55px;
-        margin-left:-20px !important;
+        margin-top: 60px;
         padding: 0 !important;
         height: auto;
         width: 100%;
-        z-index: 5;
         overflow-x: hidden !important;
 
     }
@@ -741,9 +738,9 @@ footer .copyright a:hover{
         }
 
         .whatsapp{
-            position:fixed;
+            position:absolute;
             top:0;
-            right:140px !important;
+            right:5px !important;
             transform:translate(-20%, 7%);
         }
         
