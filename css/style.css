@@ -741,6 +741,7 @@ footer .copyright a:hover{
             position: absolute;
             right:10px;
             top:10px;
+            transform: translate(10%, 0%);
             
         }
         
