@@ -3,9 +3,46 @@
     var enqry = document.querySelector('.enquiry-btn')
     var cancel = document.querySelector('.fa-xmark')
     var toggle =  document.querySelector('.toggle-btn')
-    var showform = document.querySelector('#form-container')
+    var showform = document.querySelector('.form-container')
     var nav_item = document.querySelector('.nav-bar')
 
+
+    window.onload = function() {
+        // Get the current page path
+        var currentPage = window.location.pathname;
+    
+        // Specifying the target page where you want to show the form
+        var targetPage = '/index.html';
+    
+        if (currentPage === targetPage) {
+            if (showform) {
+
+               setTimeout(() => {
+               showform.style.display = 'inline';
+             }, 2000);
+             clearTimeout();
+        }
+            }
+        };
+
+
+
+    // window.onload =function(){
+
+
+    //     if (showform) {
+    //         setTimeout(() => {
+    //             showform.style.display = 'inline';
+    //         }, 2000);
+    //         clearTimeout();
+    //     }
+
+    // };
+
+
+
+
+   
     enqry.addEventListener('click', function(e){
         e.stopPropagation();
         showform.style.display = 'inline';
@@ -28,7 +65,7 @@
             showform.style.display = 'none';
 
         }
-    } )
+    } ) 
 
     //toggle button control script
 
@@ -45,6 +82,7 @@
         i--;
     }
    })
+
 
 //    script to show big image after click
 

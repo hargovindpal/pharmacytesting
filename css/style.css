@@ -36,6 +36,7 @@ background-color: #19e9c6;
     height: 120px;
     margin-top: 65px;
     overflow: hidden;
+    
 }
 
 figure img{
@@ -44,8 +45,8 @@ figure img{
     height: auto;
     padding:5px;
     background-size: cover;
-
 }
+
 .toggle-btn{
     display: flex;
     position: absolute;
@@ -135,95 +136,132 @@ figure img{
     }
 
 
-#form-container{
+.form-container{
     display: none;
     position: fixed;
-    background-color: #00203FFF;
-    width: 550px;
-    padding:30px;
+    background-color: #d8dad9;
+    width: 600px;
+    padding:15px;
     top:0;
     left:0;
-    transform: translate(70%, 40%);
+    transform: translate(70%, 41%);
     border-radius: 10px;
-    color:white;
+    color:#00203FFF;
     z-index: 5;
+    flex-direction: column;
 
 }
 .cancel {
     position: absolute;
-    margin-left: 430px;
-    margin-top:-60px;
+    right:20px;
+    top:20px;
     color: red;
 }
 .cancel i {
     color: red;
-    border-radius:40px;
+    border-radius:50px;
     font-size: 30px;
 }
 .cancel:hover i{
     background-color: #00203FFF !important;
     color: red !important;
 }
-#form-container #enqry-form{
-    margin-top: 30px;
-    
-}
-
-#form-container #enqry-form .row{
-width: 100%;
-height: 50px;
-padding:10px;
-display: inline-block;
-
-}
-#form-container #enqry-form .row label{
-    position: absolute;
-}
-#form-container #enqry-form .row .name, .email {
-    width: 300px;
-    height: 25px;
-    border-radius: 5px;
-    border: none;
-    margin-left:150px;
-}
-#form-container #enqry-form .row .select {
-    cursor: pointer;
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
-    border: none;
-    margin-left:250px;
-}
-#form-container #enqry-form .row textarea{
-    width: 300px;
-    height: 100px;
-    border-radius: 5px;
-    border: none;
-    margin-left:150px;
-}
-#btn-section{
-    margin-top:15px;
-    margin-left:120px;
+.form-container .enqry-form{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+        
 }
-#btn-section #btn{
-   margin-left: 110px;
-   padding:5px;
-   display: inline-block;
-   font-size:14px;
-   font-weight: bold;
-   border: none;
-   border-radius: 5px;
+.form-container .enqry-form h1{
+    margin:10px 0px;
+
 
 }
-#btn-section .cncl-btn{
-    cursor: pointer;
-    background-color:rgba(255, 94, 0, 0.966);
+
+.form-group
+{
+    width: 100%;
+    position: relative;
+    margin-bottom:0px;
 }
-#btn-section .sbt-btn{
+ 
+.enqry-form .form-group input,
+.enqry-form .form-group textarea, 
+.enqry-form .form-group select,
+.enqry-form .form-group button {
+   
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background-color: #d8dad9e5;
+    font-size: 12px;
+    font-weight: 600;
+    
+  }
+
+  .enqry-form .form-group label{
+    position: absolute;
+    font-size: 13px;
+    top:-10px;
+    left:20px;
+    color: rgb(78, 74, 74);
+    background-color: #d8dad9e5;
+  }
+
+  .enqry-form .form-group textarea{
+    resize: none;
+    height: 60px;
+  }
+
+  .enqry-form button{
+    font-size: 15px;
+    height: 40px;
+    width: 520px;
+    background-color: rgb(29, 83, 138);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  .enqry-form button:hover{
+    background-color:#00203FFF;
     cursor: pointer;
-    background-color:rgba(166, 255, 0, 0.966);
-}
+
+  }
+
+  .enqry-form .form-group input:placeholder-shown+ label{
+    top:11px;
+    left:20px;
+    background-color: #d8dad9e5;
+  }
+  .enqry-form .form-group input:focus+ label,
+  .enqry-form .form-group select:focus+ label,
+  .enqry-form .form-group textarea:focus+ label
+  {
+    top:-10px;
+    left:20px;
+    transition: all  0.3s ease;
+    color: #00203FFF;
+    font-weight: 600;
+  }
+  .enqry-form .form-group input:focus,
+  .enqry-form .form-group select:focus,
+  .enqry-form .form-group textarea:focus
+  {
+    border-color: #00203FFF;
+  }
+
+
+
+
+
+
+
 
 .head .nav-bar {
     display: flex;
@@ -305,7 +343,7 @@ display: inline-block;
 }
 .whatsapp{
     position: fixed;
-    right:30px;
+    right:5px;
     margin-top:62px;
     height: 50px;
     width: 50px;
@@ -581,19 +619,26 @@ display: inline-block;
 
 
  .reach-wrapper{
-    width:93%;
+    width:94%;
     display: flex;
-    position:relative;
+    justify-content: space-between;
+    align-items: center;
     margin-left:50px;
     margin-top:20px;
-    padding:20px;
+    padding:5px;
     background-color:#00203FFF;
  }
+
+ .reach-wrapper img{
+    mix-blend-mode:screen;
+ }
  .reach-wrapper .content{
+    
     padding:10px;
-    width:37%;
+    width:100%;
     
  }
+
  .reach-wrapper p{
     padding:20px;
     margin-right:10px;
@@ -608,9 +653,22 @@ display: inline-block;
     color:white;
     font-weight: 800;
     text-align:center;
-    margin-left:200px;
     padding:5px;
  }
+.content .google-map{
+    
+    width:100%;
+   
+    border:2px solid green; 
+    
+}
+.content .google-map iframe{
+    width: 100%;
+    height:520px;
+}
+
+
+
  .ftr-container{
     position: relative;
     margin-left:50px;
@@ -689,6 +747,42 @@ footer .copyright a:hover{
 
 @media screen and (max-width:1024px)
 {
+    .form-container{
+       
+        left:-70% !important;
+        top:15%;
+        width: 100%;
+    }
+
+    .form-container h1{
+        font-size: 20px;
+    }
+
+    .enqry-form .form-group input,
+    .enqry-form .form-group textarea,
+    .enqry-form .form-group select
+    {
+        width: 95%;
+        height: 35px;
+        margin-bottom:5px;
+        font-size: 13px;
+        padding:2px;
+    }
+
+    .form-group label{
+        font-size: 13px;
+        margin-top:0px;
+    }
+
+    .enqry-form button{
+        width: 400px;
+        margin:0px !important;
+        font-size: 13px !important;
+        height: 30px;
+        padding:0px !important;
+        
+
+    }
 
 }
 @media screen and (max-width:767px) {
@@ -720,6 +814,63 @@ footer .copyright a:hover{
         width: 100% !important;
         overflow-x:hidden;
         
+    }
+    .card-container {
+       
+        margin-left: 10px !important;
+    }
+    .card-container .item{ 
+        flex-grow:0; 
+    }
+    .card-container .item P{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-wrap: wrap !important;
+        font-size: 12px;
+    }
+
+
+    .form-container{
+        position: fixed;
+        left:-51%!important;
+        top:1%;
+        width: 50% !important;
+    }
+
+    .form-container h1{
+        font-size: 20px;
+    }
+
+    .enqry-form .form-group input,
+    .enqry-form .form-group textarea,
+    .enqry-form .form-group select
+    {
+        width: 95%;
+        height: 35px;
+        margin-bottom:5px;
+        font-size: 13px;
+        padding:2px;
+    }
+
+    .form-group label{
+        font-size: 13px;
+        margin-top:0px;
+    }
+
+    .enqry-form button{
+        width: 290px;
+        margin:0px !important;
+        font-size: 13px !important;
+        height: 30px;
+        padding:0px !important;
+        
+
+    }
+
+    .form-group .row button{
+        width: 250px !important;
+       
     }
 
     .head .nav-bar{
@@ -850,11 +1001,10 @@ footer .copyright a:hover{
     color: #f69024;
 
     }
-    .content .google-map iframe{
-        width:100% !important ;
-
-      
+    .content .google-map{
+        width: 97%;
     }
+  
     .ftr-container{
         flex-direction: column;
         font-size: 6px !important;

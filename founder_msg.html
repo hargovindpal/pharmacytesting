@@ -22,7 +22,7 @@
 
             <div class="top-nav">
                 <div class="toggle-btn"><i class="fa-solid fa-bars" id="toggle"></i></div>
-                    <a href="mailto: moderncollegeofpharmacyjhansi@gmail.com"><i class="fa-solid fa-envelope"></i>Email @
+                    <a href="mailto: moderncollegeofpharmacyjhansi@gmail.com"><i class="fa-solid fa-envelope"></i>
                         moderncollegeofpharmacyjhansi@gmail.com</a>
                     <a href="tel:+91 9889094094"><i class="fa-solid fa-phone"></i>+91 9889094094</a>
                     <a href="#"><p>Follow Social Media :</p></a>
@@ -33,47 +33,52 @@
                             class="fa-brands fa-youtube"></i></a>
                     <button class="enquiry-btn" type="submit" value="Enquiry">ENQUIRY FORM</button>
             </div>
-            <div id="form-container">
-                    <h1>ENQUIRY-FORM</h1>
+            <div class="form-container">             
                 <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
-                <form id="enqry-form" method="post">
+                <form class="enqry-form" method="post">
+                    <h1>ENQUIRY-FORM</h1>
                     <div class="error-msg" style="display: none;"></div>
-                    <div class="row">
-                        <label for="name">NAME:</label>
-                        <input id="name" type="text" name="name" class="name">
+                    
+                    <div class="form-group">   
+                        <input id="name" type="text" name="name" placeholder="" autocapitalize="sentences" autofocus>
+                        <label for="name">NAME</label>
                     </div>
-                    <div class="row">
-                        <label for="contact">CONTACT:</label>
-                        <input id="contact" type="number" maxlength="10" name="contact" class="contact">
+
+                    <div class="form-group">
+                        <input id="contact" type="text"  name="contact" placeholder="">
+                        <label for="contact">CONTACT</label>
                     </div>
-                    <div class="row">
-                        <label for="email">E-MAIL:</label>
-                        <input id="email" type="email" name="email" class="email">
+
+                    <div class="form-group">
+                        <input id="email" type="email" name="email" placeholder="">
+                        <label for="email">E-MAIL</label>
                     </div>
-                    <div class="row">
-                        <label for="course">ENQUIRY FOR:</label>
-                        <select type="select" id="course" name="select" class="select" required>
+
+                    <div class="form-group">
+                        <select type="select" id="course" name="select" placeholder="" required>
                             <option selected>CHOOSE COURSE</option>
                             <option>B.PHARMACY</option>
                             <option>D.PHARMACY</option>
                         </select>
+                        <label for="course">ENQUIRY FOR</label>
                     </div>
-                    <div class="row">
-                        <label for="message">MESSAGE:</label>
-                        <textarea id="message" maxlength="300" title="Write your message here...."
+
+                    <div class="form-group">
+                        <textarea id="message"  name="message" title="Write your message here...."
                             required></textarea>
+                        <label for="message">MESSAGE:</label>
                     </div>
-                    <div id="btn-section">
-                        <button class="cncl-btn" id="btn" type="reset" value="Reset">RESET</button>
-                        <button onclick="submitForm()" class="sbt-btn" id="btn" type="submit"
-                            value="submit">SUBMIT</button>
+
+                    <div id="form-group">
+                        <button id="sbt-btn" type="submit" name="submit">SUBMIT</button>
                     </div>
+
                 </form>
             </div>
 
             <div class="nav-bar">
                 <ul class="flex-row">
-                    <li class="item-1"><a href="home.html">ABOUT US</a>
+                    <li class="item-1"><a href="index.html">ABOUT US</a>
                         <ul>
                             <li><a href="about_us.html">ABOUT COLLEGE</a></li>
                             <li><a href="vision_mission.html"> VISION & MISSION</a></li>
@@ -142,7 +147,7 @@
     <footer>
         <div class="ftr-container">
             <div class="ftr-content">
-                <h2>OUR CAMPUS</h2>
+                <h2><i class="fa-solid fa-location-dot"></i>OUR CAMPUS</h2>
                 <ul>
                     <p> Address: 554, Kochabhawar, Kanpur Road, Jhansi, Uttar Pradesh 284128 </p>
                     <p> Office Contact: 9889094094</p>
@@ -152,7 +157,7 @@
             </div>
             <div class="brk-line"></div>
             <div class="ftr-content">
-                <h2>CONTACT US</h2>
+                <h2><i class="fa-solid fa-phone"></i>CONTACT US</h2>
                 <ul>
                     <p> For Students Helpdesk: 7348550088</p>
                     <p> Other Enquiry
@@ -167,7 +172,7 @@
             </div>
             <div class="brk-line"></div>
             <div class="ftr-content">
-                <h2> OFFICIAL E-Mail</h2>
+                <h2> <i class="fa-solid fa-envelope"></i>OFFICIAL E-Mail</h2>
                 <ul>
                     <P>moderncollegeofpharmacyjhansi@gmail.com</P>
                     <P>mpsjhansiup@gmail.com</P>

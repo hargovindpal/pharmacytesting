@@ -25,16 +25,12 @@
 
 @keyframes animate {
     0%{
-        background:linear-gradient(to left, red, #fec106) ;
+        background:linear-gradit(to left, red, #fec106) ;
     }
     100%{
         background:linear-gradient(to right, red, #fec106) ;
     }
 }
-
-
-
-
 
     i {
         color: white;
@@ -217,7 +213,6 @@
 
     }
     .img-container .content img:hover{
-
         box-shadow: 0 0 15px red;
         transform: scale(1.1);
         transition: all ease 1s;
@@ -250,23 +245,26 @@
 
     }
     .card-container {
-        height: auto;
-        width: 70%;
-        margin-left:200px;
-        margin-top:30px;
         display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 93%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top:30px;  
+        margin-left: 50px;
     }
     .card-container .item{
         background-color:transparent;
         display: flex;
         margin:20px;
         padding:15px;
-        margin-left:10px;
-        height:150px;
         width:200px;
         border-radius: 5px;
         text-align: center;
-        display: inline-block;
+       
+        flex-direction: column;
+        flex-grow:1;
         color:black;
         line-height: 25px;
         word-wrap: wrap;
@@ -285,90 +283,94 @@
         background-color: red;
 
     }
-    .contact-container{
-        display: flex;
-        margin-left:50px;
-        margin-top:50px;
-        width: 93%;
-        text-align: center;
-    }
-    .contact-container .contact-form{
-        width: 80%;
-    }
-    .contact-container .row1{
 
+    .reach-wrapper .content .form-group{
         display: flex;
-        text-align: center;
-
-    }
-    .contact-container .contact-form form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        display: flex-inline;
-
     }
-    .contact-container form .row2{
-
+    .reach-wrapper .content .form-group .row{
         display: flex;
-        text-align: center;
-        margin-top:20px;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
     }
-    .contact-container form .row3{
+    .reach-wrapper .content .form-group h1{
+        margin: 20px 0px;
+    }
+    .form-group .row input,
+    .form-group .row textarea{
+        width: 80%;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 3px solid gray;
+        margin-bottom: 5px;
+    }
 
+    .content .form-group .row label {
+        position: absolute;
+        top:-15px;
+        left:60px;
+        padding: 0px 5px;
+        border-radius: 5px;
+        color: gray;
         display: flex;
-        text-align: center;
-        margin-top: 10px;
-    }
-    .contact-container form .item{
-        display: inline-block;
-        margin:5px;
-        width: 200px;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
 
     }
-    .contact-container form .item label{
-        text-align: left;
-        font-weight: bold;
+    .content .form-group .row input:placeholder-shown+ label,
+    .content .form-group .row textarea:placeholder-shown+ label
+    {
+        top:15px;
+        left:60px;
+        font-weight: 100;
+        background-color: transparent;
+
+    }
+
+    .content .form-group .row input:focus+ label,
+    .content .form-group .row textarea:focus+ label
+    {
+        top:-15px;
+        left:60px;
+        font-weight: 600;
+        color: #00203FFF;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+    .form-group .row textarea{
+        resize: none;
+        height: 100px;
+    }
+    .form-group .row button{
+        width: 500px;
         font-size: 18px;
-
+        font-weight: 800;
+        padding:8px 0px;
+        border-radius: 5px;
+        background-color: rgb(209, 181, 181);
+        transition: all 0.3s ease;
+    }
+    .form-group .row button:hover{
+        
+        border-color: rgb(209, 181, 181);
+        color: rgb(209, 181, 181);
+        background-color: #00203FFF;
+        transition: all 0.3s ease;
     }
 
-    .contact-container form .item input{
-       height: 30px;
-       width: 250px;
-       border: none;
-       border-radius:5px;
-       box-shadow: 2px 2px 5px 5px rgba(129, 129, 129, 0.685);
-    }
-    .contact-container .contact-form form .item  #name{
-        margin-left:150px;
-    }
-    .contact-container .contact-form form .item textarea{
-        border:none;
-        border-radius:5px;
-        box-shadow: 2px 2px 5px 5px rgba(129, 129, 129, 0.685);
-    }
-    .contact-container form .submit-btn{
-        padding:8px;
-        font-weight: bolder;
-        border: none;
-        border-radius:5px;
-        box-shadow: 2px 2px 5px 5px rgba(129, 129, 129, 0.685);
-        background-color:wheat;
-        margin-left:-130px;
-        margin-top:20px;
 
-    }
-    .contact-container form .submit-btn:hover{
-        box-shadow: 2px 2px 5px 5px green;
 
-    }
-    ::placeholder{
-        padding:10px;
-    }
 
-    html, body {
-        overflow-x: hidden;
-    }
+ 
+
      .course-container .course-bg{
         position: relative;
         display: flex;
