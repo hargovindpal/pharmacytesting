@@ -16,11 +16,7 @@
     .section3{
         margin-top:50px;
     }
-    .container{
-        padding:10px 20px;
-        margin-bottom: 100px;
-    }
-
+   
 
 
 @keyframes animate {
@@ -262,7 +258,6 @@
         width:200px;
         border-radius: 5px;
         text-align: center;
-       
         flex-direction: column;
         flex-grow:1;
         color:black;
@@ -464,7 +459,7 @@
         height: 400px;
      }
      .txt-container{
-        width: 91.5%;
+        width: 94%;
         margin-left: 50px;
         padding:20px;
         height: auto;

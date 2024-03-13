@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/title_logo.png" type="image/x-icon">
     <title>Modern College of Pharmacy</title>
@@ -7,15 +8,15 @@
     <link href="css/common.css" rel="stylesheet" type="text/css">
     <link href="css/slick.css" rel="stylesheet" type="text/css">
     <link href="css/slick.theme.css" rel="stylesheet" type="text/css">
-    
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
-        <div class="head container">
+        <div class="head">
             <div class="logo" id="logo-div">
                 <figure><img src="images/logo.png"></figure>
             </div>
@@ -23,7 +24,7 @@
             <div class="top-nav">
                 <div class="toggle-btn"><i class="fa-solid fa-bars" id="toggle"></i></div>
                     <a href="mailto: moderncollegeofpharmacyjhansi@gmail.com"><i class="fa-solid fa-envelope"></i>
-                        moderncollegeofpharmacyjhansi@gmail.com</a>
+                    moderncollegeofpharmacyjhansi@gmail.com</a>
                     <a href="tel:+91 9889094094"><i class="fa-solid fa-phone"></i>+91 9889094094</a>
                     <a href="#"><p>Follow Social Media :</p></a>
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -33,7 +34,8 @@
                             class="fa-brands fa-youtube"></i></a>
                     <button class="enquiry-btn" type="submit" value="Enquiry">ENQUIRY FORM</button>
             </div>
-            <div class="form-container">             
+            <div class="form-container">
+                    
                 <div class="cancel"><i class="fa-sharp fa-solid fa-xmark"></i></div>
                 <form class="enqry-form" method="post">
                     <h1>ENQUIRY-FORM</h1>
@@ -56,7 +58,7 @@
 
                     <div class="form-group">
                         <select type="select" id="course" name="select" placeholder="" required>
-                            <option selected>CHOOSE COURSE</option>
+                            <option selected> CHOOSE COURSE</option>
                             <option>B.PHARMACY</option>
                             <option>D.PHARMACY</option>
                         </select>
@@ -78,96 +80,45 @@
 
             <div class="nav-bar">
                 <ul class="flex-row">
-                    <li class="item-1"><a href="index.html">ABOUT US</a>
+                    <li class="item-1"><a href="index.php">ABOUT US</a>
                         <ul>
-                            <li><a href="about_us.html">ABOUT COLLEGE</a></li>
-                            <li><a href="vision_mission.html"> VISION & MISSION</a></li>
-                            <li><a href="founder_msg.html"> FOUNDER'S MESSAGE</a></li>
-                            <li><a href="chairman_msg.html"> CHAIRMAN'S MESSAGE</a></li>
-                            <li><a href="director_msg.html"> DIRECTOR'S MESSAGE</a></li>
-                            <li><a href="principal_msg.html"> PRINCIPAL'S MESSAGE</a></li>
+                            <li><a href="about_us.php">ABOUT COLLEGE</a></li>
+                            <li><a href="vision_mission.php"> VISION & MISSION</a></li>
+                            <li><a href="founder_msg.php"> FOUNDER'S MESSAGE</a></li>
+                            <li><a href="chairman_msg.php"> CHAIRMAN'S MESSAGE</a></li>
+                            <li><a href="director_msg.php"> DIRECTOR'S MESSAGE</a></li>
+                            <li><a href="principal_msg.php"> PRINCIPAL'S MESSAGE</a></li>
                         </ul>
                     </li>
                     <li class="item-3"><a href="#">ACADEMICS</a>
                         <ul>
-                            <li><a href="our_courses.html">OUR COURSES</a></li>
-                            <li><a href="workshops_seminars.html"> WORKSHOPS & SEMINARS</a></li>
+                            <li><a href="our_courses.php">OUR COURSES</a></li>
+                            <li><a href="workshops_seminars.php"> WORKSHOPS & SEMINARS</a></li>
 
                         </ul>
                     </li>
-                    <li class="item-4"><a href="admission.html">ADMISSIONS</a></li>
+                    <li class="item-4"><a href="admission.php">ADMISSIONS</a></li>
                     <li class="item-5"><a href="#">LIFE AT MODERN COLLEGE</a>
                         <ul>
-                            <li><a href="facility.html"> FACILITIES</a></li>
-                            <li><a href="laboratories.html"> LABORATORIES</a></li>
-                            <li><a href="extra_curricular.html"> EXTRA CURRICULAR</a></li>
+                            <li><a href="facility.php"> FACILITIES</a></li>
+                            <li><a href="laboratories.php"> LABORATORIES</a></li>
+                            <li><a href="extra_curricular.php"> EXTRA CURRICULAR</a></li>
                         </ul>
                     </li>
                     <li class="item-7"><a href="#">CAREER</a>
                         <ul>
-                            <li><a href="scope_after_b.pharm.html"> SCOPE AFTER B.PHARM</a></li>
-                            <li><a href="scope_after_d.pharm.html"> SCOPE AFTER D.PHARM</a></li>
+                            <li><a href="scope_after_b.pharm.php"> SCOPE AFTER B.PHARM</a></li>
+                            <li><a href="scope_after_d.pharm.php"> SCOPE AFTER D.PHARM</a></li>
                         </ul>
 
                     </li>
-                    <li class="item-6"><a href="mandatory_disclosure.html">MANDATORY DISCLOSURE</a></li>
-                    <li class="item-7"><a href="contact.html">CONTACT US</a></li>
+                    <li class="item-6"><a href="mandatory_disclosure.php">MANDATORY DISCLOSURE</a></li>
+                    <li class="item-7"><a href="contact.php">CONTACT US</a></li>
                 </ul>
             </div>
-            <div class="whatsapp"><a href="https://api.whatsapp.com/send?phone=7525037054">
+            <div class="whatsapp"><a href="https://api.whatsapp.com/send?phone=917348550088">
                 <img src="images/whatsapp-logo.png" title="Whatsapp us">
                 </img></a>
             </div>
         </div>
     </header>
-activity page
-        
-<footer>
-    <div class="ftr-container">
-        <div class="ftr-content">
-            <h2><i class="fa-solid fa-location-dot"></i>OUR CAMPUS</h2>
-            <ul>
-                <p> Address: 554, Kochabhawar, Kanpur Road, Jhansi, Uttar Pradesh 284128 </p>
-                <p> Office Contact: 9889094094</p>
-                <p> Mail ID:</p>
-                <p>moderncollegeofpharmacyjhansi@gmail.com</p>
-            </ul>
-        </div>
-        <div class="brk-line"></div>
-        <div class="ftr-content">
-            <h2><i class="fa-solid fa-phone"></i>CONTACT US</h2>
-            <ul>
-                <p> For Students Helpdesk: 7348550088</p>
-                <p> Other Enquiry
-                    And Help Desk
-                    7318027770</p>
-                <div class="elem">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
-            </ul>
-        </div>
-        <div class="brk-line"></div>
-        <div class="ftr-content">
-            <h2> <i class="fa-solid fa-envelope"></i>OFFICIAL E-Mail</h2>
-            <ul>
-                <P>moderncollegeofpharmacyjhansi@gmail.com</P>
-                <P>mpsjhansiup@gmail.com</P>
-            </ul>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>© 2024. All Rights Reserved by, Modern College of Pharmacy, Jhansi
-            Maintained by: Franciscan Solutions Pvt. Ltd.<a title="Reach to Er. Harry for Website Creation!"
-                href="https://api.whatsapp.com/send?phone=7525037054">(Er.harry)</a></p>
-    </div>
-
-</footer>
-    <script src="js/script.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
-</html>

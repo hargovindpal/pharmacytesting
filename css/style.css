@@ -63,13 +63,18 @@ figure img{
 #toggle {
     color:white;
 }
+.head{
+    background-color: white;
+    width: 99%;
+    height: 160px;
+    z-index: 1;
+}
 
 .head .top-nav{
     display: flex;
     margin: 5px;
     padding-top:5px;
     width: 100%;
-    height: 50px;
     background-color: #00203FFF;
     color: white;
     border-radius: 5px;
@@ -139,7 +144,7 @@ figure img{
 .form-container{
     display: none;
     position: fixed;
-    background-color: #d8dad9;
+    background-color: white;
     width: 600px;
     padding:15px;
     top:0;
@@ -199,7 +204,7 @@ figure img{
     outline: none;
     width: 100%;
     height: 40px;
-    background-color: #d8dad9e5;
+    background-color: white;
     font-size: 12px;
     font-weight: 600;
     
@@ -211,7 +216,7 @@ figure img{
     top:-10px;
     left:20px;
     color: rgb(78, 74, 74);
-    background-color: #d8dad9e5;
+    background-color: white;
   }
 
   .enqry-form .form-group textarea{
@@ -222,22 +227,25 @@ figure img{
   .enqry-form button{
     font-size: 15px;
     height: 40px;
-    width: 520px;
-    background-color: rgb(29, 83, 138);
-    color: white;
+    width: 570px;
+    background-color: rgb(209, 181, 181);
+    color: #00203FFF;
     font-weight: 600;
     border-radius: 5px;
+    cursor: pointer;
   }
   .enqry-form button:hover{
-    background-color:#00203FFF;
-    cursor: pointer;
+    border-color: rgb(209, 181, 181);
+    color: rgb(209, 181, 181);
+    background-color: #00203FFF;
+    transition: all 0.3s ease;
 
   }
 
   .enqry-form .form-group input:placeholder-shown+ label{
     top:11px;
     left:20px;
-    background-color: #d8dad9e5;
+    background-color: white;
   }
   .enqry-form .form-group input:focus+ label,
   .enqry-form .form-group select:focus+ label,
@@ -258,19 +266,14 @@ figure img{
 
 
 
-
-
-
-
-
 .head .nav-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
-    margin-top: 20px;
+    margin-left: 370px;
+    margin-top: 35px;
     width: auto;
-    height: 50px;
+    
     z-index: 1;
 }
 
@@ -343,8 +346,8 @@ figure img{
 }
 .whatsapp{
     position: fixed;
-    right:5px;
-    margin-top:62px;
+    right:10px;
+    margin-top:58px;
     height: 50px;
     width: 50px;
     z-index: 5;
@@ -902,9 +905,7 @@ footer .copyright a:hover{
         visibility: hidden;
     }
     
-    .container{
-        margin-bottom:50px !important;
-    }
+   
     .slick-container{
         width: 100%;
         margin:0;
